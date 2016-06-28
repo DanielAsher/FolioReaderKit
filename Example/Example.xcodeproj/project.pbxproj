@@ -13,6 +13,8 @@
 		1A42C2921C0E3883000F2137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A42C2901C0E3883000F2137 /* Main.storyboard */; };
 		1A42C2941C0E3883000F2137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A42C2931C0E3883000F2137 /* Assets.xcassets */; };
 		1A42C2A21C0E3A8D000F2137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A42C2A01C0E3A8D000F2137 /* LaunchScreen.storyboard */; };
+		657641A51D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */ = {isa = PBXBuildFile; fileRef = 657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */; };
+		65F14C531D1A88EC00F5E5B3 /* Moby Dick.epub in Resources */ = {isa = PBXBuildFile; fileRef = 65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */; };
 		6E3C4A3F1C3C6708009CBC8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3C4A3E1C3C6708009CBC8C /* MediaPlayer.framework */; };
 		6E5C9B051C4037B7008F6FD9 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */; };
 		6E5C9B091C403968008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
@@ -45,6 +47,8 @@
 		27131F41E20F15F72AAF7176 /* Pods_FolioReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FolioReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE90B4095B5C7E6237EEBDD /* Pods-FolioReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolioReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C8EADB52E1D834750CD7D23 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Peter Rabbit - Beatrix Potter.epub"; sourceTree = "<group>"; };
+		65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moby Dick.epub"; sourceTree = "<group>"; };
 		6E3C4A3E1C3C6708009CBC8C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Silver Chair.epub"; sourceTree = "<group>"; };
 		6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = "<group>"; };
@@ -125,8 +129,10 @@
 		6E5C9B011C4037B7008F6FD9 /* Sample eBooks */ = {
 			isa = PBXGroup;
 			children = (
+				65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */,
 				6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */,
 				6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */,
+				657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */,
 			);
 			path = "Sample eBooks";
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 				1A42C2871C0E3882000F2137 /* Resources */,
 				B6A166DC30D64CDC32736E22 /* 📦 Embed Pods Frameworks */,
 				8F716768EB59E9B6D88C48D7 /* 📦 Copy Pods Resources */,
+				0CEA910F67C4EC85642EBA6B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +191,7 @@
 				CA10C12F1C572A4B0049165D /* Resources */,
 				C1392FF51E4FD15EBB5AA8DD /* 📦 Embed Pods Frameworks */,
 				652A7706A17894A2B0BA1503 /* 📦 Copy Pods Resources */,
+				B88CE10FBAA276D6C1D0418F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +254,8 @@
 				1A42C2941C0E3883000F2137 /* Assets.xcassets in Resources */,
 				1A42C2A21C0E3A8D000F2137 /* LaunchScreen.storyboard in Resources */,
 				6E5C9B091C403968008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */,
+				657641A51D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
+				65F14C531D1A88EC00F5E5B3 /* Moby Dick.epub in Resources */,
 				6E5C9B051C4037B7008F6FD9 /* The Silver Chair.epub in Resources */,
 				1A42C2921C0E3883000F2137 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +273,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CEA910F67C4EC85642EBA6B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D8126CC73301F2413345444 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +346,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88CE10FBAA276D6C1D0418F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFF78AC0EC7FAA2ADF7765C4 /* 📦 Check Pods Manifest.lock */ = {
