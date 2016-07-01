@@ -18,6 +18,16 @@
 		6E3C4A3F1C3C6708009CBC8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3C4A3E1C3C6708009CBC8C /* MediaPlayer.framework */; };
 		6E5C9B051C4037B7008F6FD9 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */; };
 		6E5C9B091C403968008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
+		C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */ = {isa = PBXBuildFile; fileRef = 657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */; };
+		C792C8B91D23E98900C636DD /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
+		C792C8BB1D23E99700C636DD /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
+		C792C8BD1D240A3700C636DD /* Xml.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BC1D240A3700C636DD /* Xml.swift */; };
+		C792C8CB1D266B7D00C636DD /* TextImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */; };
+		C792C8CD1D266CA600C636DD /* SKView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8CC1D266CA600C636DD /* SKView+Ext.swift */; };
+		C792C8CF1D266CD400C636DD /* UIImageEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8CE1D266CD400C636DD /* UIImageEffects.swift */; };
+		C792C8D11D266CE300C636DD /* UIKit+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D01D266CE300C636DD /* UIKit+Ext.swift */; };
+		C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D21D266D0E00C636DD /* Math+Ext.swift */; };
+		C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D51D26AB1300C636DD /* WordsModel.swift */; };
 		CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10C1331C572A4B0049165D /* FolioReaderTests.swift */; };
 		CA61603F1C572C4C00ACD034 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
 		CA6160401C572C4C00ACD034 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */; };
@@ -53,6 +63,17 @@
 		6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Silver Chair.epub"; sourceTree = "<group>"; };
 		6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = "<group>"; };
 		8E1BE6465444C567F5D1B8E6 /* Pods-FolioReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolioReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C792C8B81D23E98900C636DD /* StoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBook.swift; path = ../FolioReaderTests/StoryBook.swift; sourceTree = "<group>"; };
+		C792C8BA1D23E99700C636DD /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPage.swift; path = ../FolioReaderTests/StoryPage.swift; sourceTree = "<group>"; };
+		C792C8BC1D240A3700C636DD /* Xml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xml.swift; sourceTree = "<group>"; };
+		C792C8BE1D240A6900C636DD /* Pattern Matching.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Pattern Matching.playground"; sourceTree = "<group>"; };
+		C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageViewController.swift; sourceTree = "<group>"; };
+		C792C8CC1D266CA600C636DD /* SKView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SKView+Ext.swift"; path = "Sample eBooks/SKView+Ext.swift"; sourceTree = "<group>"; };
+		C792C8CE1D266CD400C636DD /* UIImageEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageEffects.swift; sourceTree = "<group>"; };
+		C792C8D01D266CE300C636DD /* UIKit+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Ext.swift"; sourceTree = "<group>"; };
+		C792C8D21D266D0E00C636DD /* Math+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Math+Ext.swift"; sourceTree = "<group>"; };
+		C792C8D41D268C3400C636DD /* Swift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift.playground; sourceTree = "<group>"; };
+		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		CA10C1311C572A4B0049165D /* FolioReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10C1331C572A4B0049165D /* FolioReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderTests.swift; sourceTree = "<group>"; };
 		CA10C1351C572A4B0049165D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +105,7 @@
 		1A42C2801C0E3882000F2137 = {
 			isa = PBXGroup;
 			children = (
+				C792C8C51D25E56400C636DD /* Playgrounds */,
 				1A42C28B1C0E3882000F2137 /* Example */,
 				CA10C1321C572A4B0049165D /* FolioReaderTests */,
 				1A42C28A1C0E3882000F2137 /* Products */,
@@ -104,6 +126,7 @@
 		1A42C28B1C0E3882000F2137 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C792C8C91D266B5200C636DD /* TextImageExample */,
 				1A42C28C1C0E3882000F2137 /* AppDelegate.swift */,
 				1A42C28E1C0E3882000F2137 /* ViewController.swift */,
 				1A42C2901C0E3883000F2137 /* Main.storyboard */,
@@ -111,6 +134,13 @@
 				1A42C2981C0E3883000F2137 /* Info.plist */,
 				1A42C2A01C0E3A8D000F2137 /* LaunchScreen.storyboard */,
 				6E5C9B011C4037B7008F6FD9 /* Sample eBooks */,
+				C792C8D51D26AB1300C636DD /* WordsModel.swift */,
+				C792C8D21D266D0E00C636DD /* Math+Ext.swift */,
+				C792C8CC1D266CA600C636DD /* SKView+Ext.swift */,
+				C792C8D01D266CE300C636DD /* UIKit+Ext.swift */,
+				C792C8CE1D266CD400C636DD /* UIImageEffects.swift */,
+				C792C8B81D23E98900C636DD /* StoryBook.swift */,
+				C792C8BA1D23E99700C636DD /* StoryPage.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -137,12 +167,30 @@
 			path = "Sample eBooks";
 			sourceTree = "<group>";
 		};
+		C792C8C51D25E56400C636DD /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				C792C8BE1D240A6900C636DD /* Pattern Matching.playground */,
+				C792C8D41D268C3400C636DD /* Swift.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
+		C792C8C91D266B5200C636DD /* TextImageExample */ = {
+			isa = PBXGroup;
+			children = (
+				C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */,
+			);
+			name = TextImageExample;
+			sourceTree = "<group>";
+		};
 		CA10C1321C572A4B0049165D /* FolioReaderTests */ = {
 			isa = PBXGroup;
 			children = (
 				CA10C1331C572A4B0049165D /* FolioReaderTests.swift */,
 				CAF233281C57E1F400CB930C /* SharingProviderTests.swift */,
 				CA10C1351C572A4B0049165D /* Info.plist */,
+				C792C8BC1D240A3700C636DD /* Xml.swift */,
 			);
 			path = FolioReaderTests;
 			sourceTree = "<group>";
@@ -164,12 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A42C29B1C0E3883000F2137 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				BFF78AC0EC7FAA2ADF7765C4 /* 📦 Check Pods Manifest.lock */,
+				BFF78AC0EC7FAA2ADF7765C4 /* [CP] Check Pods Manifest.lock */,
 				1A42C2851C0E3882000F2137 /* Sources */,
 				1A42C2861C0E3882000F2137 /* Frameworks */,
 				1A42C2871C0E3882000F2137 /* Resources */,
-				B6A166DC30D64CDC32736E22 /* 📦 Embed Pods Frameworks */,
-				8F716768EB59E9B6D88C48D7 /* 📦 Copy Pods Resources */,
+				B6A166DC30D64CDC32736E22 /* [CP] Embed Pods Frameworks */,
+				8F716768EB59E9B6D88C48D7 /* [CP] Copy Pods Resources */,
 				0CEA910F67C4EC85642EBA6B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -185,12 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA10C1381C572A4B0049165D /* Build configuration list for PBXNativeTarget "FolioReaderTests" */;
 			buildPhases = (
-				1D8126CC73301F2413345444 /* 📦 Check Pods Manifest.lock */,
+				1D8126CC73301F2413345444 /* [CP] Check Pods Manifest.lock */,
 				CA10C12D1C572A4B0049165D /* Sources */,
 				CA10C12E1C572A4B0049165D /* Frameworks */,
 				CA10C12F1C572A4B0049165D /* Resources */,
-				C1392FF51E4FD15EBB5AA8DD /* 📦 Embed Pods Frameworks */,
-				652A7706A17894A2B0BA1503 /* 📦 Copy Pods Resources */,
+				C1392FF51E4FD15EBB5AA8DD /* [CP] Embed Pods Frameworks */,
+				652A7706A17894A2B0BA1503 /* [CP] Copy Pods Resources */,
 				B88CE10FBAA276D6C1D0418F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -266,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA6160401C572C4C00ACD034 /* The Silver Chair.epub in Resources */,
+				C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
 				CA61603F1C572C4C00ACD034 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,14 +337,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1D8126CC73301F2413345444 /* 📦 Check Pods Manifest.lock */ = {
+		1D8126CC73301F2413345444 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +352,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		652A7706A17894A2B0BA1503 /* 📦 Copy Pods Resources */ = {
+		652A7706A17894A2B0BA1503 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,14 +367,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F716768EB59E9B6D88C48D7 /* 📦 Copy Pods Resources */ = {
+		8F716768EB59E9B6D88C48D7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,14 +382,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B6A166DC30D64CDC32736E22 /* 📦 Embed Pods Frameworks */ = {
+		B6A166DC30D64CDC32736E22 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +412,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFF78AC0EC7FAA2ADF7765C4 /* 📦 Check Pods Manifest.lock */ = {
+		BFF78AC0EC7FAA2ADF7765C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,14 +427,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C1392FF51E4FD15EBB5AA8DD /* 📦 Embed Pods Frameworks */ = {
+		C1392FF51E4FD15EBB5AA8DD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +449,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C792C8CD1D266CA600C636DD /* SKView+Ext.swift in Sources */,
 				1A42C28F1C0E3882000F2137 /* ViewController.swift in Sources */,
+				C792C8CF1D266CD400C636DD /* UIImageEffects.swift in Sources */,
+				C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */,
+				C792C8D11D266CE300C636DD /* UIKit+Ext.swift in Sources */,
 				1A42C28D1C0E3882000F2137 /* AppDelegate.swift in Sources */,
+				C792C8CB1D266B7D00C636DD /* TextImageViewController.swift in Sources */,
+				C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +464,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C792C8BB1D23E99700C636DD /* StoryPage.swift in Sources */,
 				CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */,
 				CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */,
+				C792C8B91D23E98900C636DD /* StoryBook.swift in Sources */,
+				C792C8BD1D240A3700C636DD /* Xml.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

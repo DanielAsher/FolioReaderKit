@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var bookOne: UIButton!
     @IBOutlet var bookTwo: UIButton!
+    
     let epubSampleFiles = [
         "The Tale of Peter Rabbit - Beatrix Potter", // standard eBook
         "The Adventures Of Sherlock Holmes - Adventure I", // audio-eBook
@@ -21,39 +22,40 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setCover(bookOne, index: 0)
-        setCover(bookTwo, index: 1)
+//        setCover(bookOne, index: 0)
+//        setCover(bookTwo, index: 1)
     }
 
-    @IBAction func didOpen(sender: AnyObject) {
-        openEpub(sender.tag);
-    }
+//    @IBAction func didOpen(sender: AnyObject) {
+//        openEpub(sender.tag);
+//    }
+//    
+//    func openEpub(sampleNum:Int) {
+//        let config = FolioReaderConfig()
+//        config.shouldHideNavigationOnTap = sampleNum == 1 ? true : false
+//        
+//        // See more at FolioReaderConfig.swift
+////        config.enableTTS = false
+////        config.allowSharing = false
+////        config.tintColor = UIColor.blueColor()
+////        config.toolBarTintColor = UIColor.redColor()
+////        config.toolBarBackgroundColor = UIColor.purpleColor()
+////        config.menuTextColor = UIColor.brownColor()
+////        config.menuBackgroundColor = UIColor.lightGrayColor()
+//        
+//        
+//        let epubName = epubSampleFiles[sampleNum-1];
+//        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
+//        FolioReader.presentReader(parentViewController: self, withEpubPath: bookPath!, andConfig: config, shouldRemoveEpub: false)
+//    }
+//
+//    func setCover(button: UIButton, index: Int) {
+//        let epubName = epubSampleFiles[index];
+//        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
+//        
+//        if let image = FolioReader.getCoverImage(bookPath!) {
+//            button.setBackgroundImage(image, forState: .Normal)
+//        }
+//    }
     
-    func openEpub(sampleNum:Int) {
-        let config = FolioReaderConfig()
-        config.shouldHideNavigationOnTap = sampleNum == 1 ? true : false
-        
-        // See more at FolioReaderConfig.swift
-//        config.enableTTS = false
-//        config.allowSharing = false
-//        config.tintColor = UIColor.blueColor()
-//        config.toolBarTintColor = UIColor.redColor()
-//        config.toolBarBackgroundColor = UIColor.purpleColor()
-//        config.menuTextColor = UIColor.brownColor()
-//        config.menuBackgroundColor = UIColor.lightGrayColor()
-        
-        
-        let epubName = epubSampleFiles[sampleNum-1];
-        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
-        FolioReader.presentReader(parentViewController: self, withEpubPath: bookPath!, andConfig: config, shouldRemoveEpub: false)
-    }
-
-    func setCover(button: UIButton, index: Int) {
-        let epubName = epubSampleFiles[index];
-        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
-        
-        if let image = FolioReader.getCoverImage(bookPath!) {
-            button.setBackgroundImage(image, forState: .Normal)
-        }
-    }
 }
