@@ -9,6 +9,6 @@
 import Foundation
 
 struct StoryPage {
-    var image: String
-    var paragraph: String
+    var image: String = ""
+    var paragraph: String = ""
 }
