@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/32605</dc:identifier>
+    <dc:creator opf:file-as="Unknown">Unknown</dc:creator>
+    <dc:title>History of Beasts</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Animals -- Juvenile literature</dc:subject>
+    <dc:date opf:event="publication">2010-05-30</dc:date>
+    <dc:date opf:event="conversion">2016-06-17T06:21:05.837318+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/32605/32605-h/32605-h.htm</dc:source>
+    <meta name="cover" content="item27"/>
+  </metadata>
+  <manifest>
+    <!--Image: 471 x 310 size=46225 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@frontcover.png" id="item1" media-type="image/png"/>
+    <!--Image: 28 x 28 size=511 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@corbel.png" id="item2" media-type="image/png"/>
+    <!--Image: 32 x 32 size=617 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@flower.png" id="item3" media-type="image/png"/>
+    <!--Image: 467 x 342 size=45931 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-003.png" id="item4" media-type="image/png"/>
+    <!--Image: 261 x 307 size=20958 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-004.png" id="item5" media-type="image/png"/>
+    <!--Image: 419 x 257 size=24114 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-005.png" id="item6" media-type="image/png"/>
+    <!--Image: 289 x 208 size=21942 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-006.png" id="item7" media-type="image/png"/>
+    <!--Image: 338 x 275 size=25019 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-007.png" id="item8" media-type="image/png"/>
+    <!--Image: 255 x 263 size=18194 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-008.png" id="item9" media-type="image/png"/>
+    <!--Image: 279 x 218 size=14315 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-009.png" id="item10" media-type="image/png"/>
+    <!--Image: 329 x 257 size=20368 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-010.png" id="item11" media-type="image/png"/>
+    <!--Image: 232 x 139 size=10313 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-011.png" id="item12" media-type="image/png"/>
+    <!--Image: 248 x 154 size=10918 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-012.png" id="item13" media-type="image/png"/>
+    <!--Image: 350 x 290 size=29137 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-013.png" id="item14" media-type="image/png"/>
+    <!--Image: 478 x 425 size=39458 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-014.png" id="item15" media-type="image/png"/>
+    <!--Image: 353 x 293 size=26701 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-015.png" id="item16" media-type="image/png"/>
+    <!--Image: 429 x 366 size=46917 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-016.png" id="item17" media-type="image/png"/>
+    <!--Image: 372 x 357 size=40649 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-017.png" id="item18" media-type="image/png"/>
+    <!--Image: 360 x 437 size=44827 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-018.png" id="item19" media-type="image/png"/>
+    <!--Image: 472 x 275 size=30886 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-020a.png" id="item20" media-type="image/png"/>
+    <!--Image: 334 x 271 size=20602 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@illo-020b.png" id="item21" media-type="image/png"/>
+    <!--Image: 416 x 164 size=14504 -->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@images@badprint.png" id="item22" media-type="image/png"/>
+    <item href="pgepub.css" id="item23" media-type="text/css"/>
+    <item href="0.css" id="item24" media-type="text/css"/>
+    <item href="1.css" id="item25" media-type="text/css"/>
+    <!--Chunk: size=41054-->
+    <item href="@public@vhost@g@gutenberg@html@files@32605@32605-h@32605-h-0.htm.html" id="item26" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="cover.jpg" id="item27" media-type="image/jpeg"/>
+    <item href="wrap0000.html" id="coverpage-wrapper" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref linear="no" idref="coverpage-wrapper"/>
+    <itemref linear="yes" idref="item26"/>
+  </spine>
+  <guide>
+    <reference type="cover" href="wrap0000.html" title="Cover"/>
+  </guide>
+</package>

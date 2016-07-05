@@ -3,5 +3,8 @@
     <pages>
         <page name='ImageText'/>
         <page name='Untitled Page'/>
+        <page name='nilOptional'/>
+        <page name='flatMap'/>
+        <page name='split'/>
     </pages>
 </playground>

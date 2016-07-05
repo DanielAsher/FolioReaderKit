@@ -1,0 +1,199 @@
+/*  XML blockout */
+/* slight differences for print and screen */
+@media print {
+    span.pgmark {
+        border: 0 !important
+        }
+    hr.pg {
+        display: none;
+        visibility: hidden
+        }
+    .main p {
+        margin-bottom: 0.25em;
+        text-indent: 2em
+        }
+    body {
+        margin-right: 0;
+        margin-left: 0
+        }
+    }
+@media screen {
+    span.pgmark {
+        border-top: thin solid silver;
+        border-bottom: thin solid silver;
+        display: inline !important;
+        visibility: visible !important;
+        position: absolute;
+        left: 1%
+        }
+    p {
+        margin-bottom: 0.75em;
+        text-indent: 0
+        }
+    body {
+        margin-left: 10%;
+        margin-right: 10%
+        }
+    }
+body {
+    font-size: large
+    }
+div.main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 28em
+    }
+div.main p {
+    text-align: justify;
+    margin-top: 0;
+    line-height: 1.3
+    }
+div.main h2 {
+    text-align: center;
+    margin: 6em auto 0.5em auto;
+    line-height: 2;
+    font-weight: normal;
+    font-size: 130%;
+    page-break-before: always
+    }
+/* for transcriber's note */
+div.tnote {
+    padding: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 6em;
+    page-break-before: always;
+    page-break-after: always
+    }
+div.tnote p {
+    text-indent: 0;
+    margin-top: 0.5em;
+    font-size: 85%
+    }
+div.tnote h3 {
+    text-indent: 0;
+    text-align: left;
+    font-size: 110%;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0
+    }
+/* links */
+@media print {
+    a:link {
+        color: black;
+        background-color: inherit;
+        text-decoration: none
+        }
+    a:visited {
+        color: black;
+        background-color: inherit;
+        text-decoration: none
+        }
+    }
+@media screen {
+    a:link {
+        color: blue;
+        background-color: inherit;
+        text-decoration: none
+        }
+    a:visited {
+        color: blue;
+        background-color: inherit;
+        text-decoration: none
+        }
+    a:hover {
+        color: red;
+        background-color: inherit
+        }
+    a:focus {
+        outline: #fe6 solid 2px;
+        color: inherit;
+        background-color: #fe6
+        }
+    }
+h1 {
+    line-height: 1.8;
+    margin: 2em auto;
+    font-weight: bold;
+    font-size: 180%
+    }
+h1 small {
+    font-weight: normal;
+    font-size: 75%
+    }
+h1 big {
+    font-size: 140%
+    }
+table.cover {
+    page-break-before: always;
+    page-break-after: always;
+    margin: 6em auto
+    }
+table.cover td.corner {
+    vertical-align: middle !important;
+    text-align: center !important
+    }
+p.backcover {
+    border-bottom: 9px double black;
+    padding-bottom: 1em;
+    margin: 2em 1em;
+    letter-spacing: 0.2em;
+    line-height: 1.4
+    }
+.bot2 {
+    padding-bottom: 2em
+    }
+p.publ {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    letter-spacing: 0.2em;
+    line-height: 1.6 !important;
+    font-size: 140%
+    }
+table.title {
+    margin: 6em auto
+    }
+table.title td.titlecorner {
+    vertical-align: middle !important;
+    text-align: center !important
+    }
+/* for noting inferred text */
+ins.TN {
+    text-decoration: none;
+    border-bottom: thin dotted gray
+    }
+span.pgmark {
+    display: none;
+    visibility: hidden;
+    /* over-ridden for screen devices */
+    font-size: x-small;
+    font-family: serif;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-indent: 0;
+    text-align: left;
+    margin: 0;
+    padding: 0.05em 0.5em !important
+    }
+hr {
+    background-color: black;
+    color: inherit;
+    padding: 0
+    }
+.ns {
+    display: none;
+    visibility: hidden
+    }
+.ctr {
+    text-align: center !important
+    }
+.framed {
+    border: thin solid black
+    }
+/* XML end  */

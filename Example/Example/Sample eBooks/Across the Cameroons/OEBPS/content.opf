@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/39185</dc:identifier>
+    <dc:creator opf:file-as="Gilson, Charles">Charles Gilson</dc:creator>
+    <dc:contributor opf:file-as="Webb, Archibald" opf:role="ill">Archibald Webb</dc:contributor>
+    <dc:title>Across the Cameroons: A Story of War and Adventure</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Adventure stories</dc:subject>
+    <dc:subject>Cameroon -- Fiction</dc:subject>
+    <dc:date opf:event="publication">2012-03-17</dc:date>
+    <dc:date opf:event="conversion">2016-06-20T09:09:07.984229+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/39185/39185-rst/39185-rst.rst</dc:source>
+    <meta content="item1" name="cover"/>
+  </metadata>
+  <manifest>
+    <!--Image: 388 x 573 size=51154 -->
+    <item id="item1" media-type="image/jpeg" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@images@img-cover.jpg"/>
+    <!--Image: 478 x 762 size=60970 -->
+    <item id="item2" media-type="image/jpeg" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@images@img-front.jpg"/>
+    <!--Image: 480 x 770 size=68144 -->
+    <item id="item3" media-type="image/jpeg" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@images@img-120.jpg"/>
+    <!--Image: 480 x 776 size=66552 -->
+    <item id="item4" media-type="image/jpeg" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@images@img-208.jpg"/>
+    <item id="item5" media-type="text/css" href="pgepub.css"/>
+    <item id="item6" media-type="text/css" href="0.css"/>
+    <item id="item7" media-type="text/css" href="1.css"/>
+    <!--Chunk: size=6409 Split on div.section-->
+    <item id="pg-header" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-0.rst.html"/>
+    <!--Chunk: size=12718 Split on div.section-->
+    <item id="id1" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-1.rst.html"/>
+    <!--Chunk: size=13011 Split on div.section-->
+    <item id="chapter-i-captain-von-hardenberg" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-2.rst.html"/>
+    <!--Chunk: size=14884 Split on div.section-->
+    <item id="chapter-ii-the-sunstone" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-3.rst.html"/>
+    <!--Chunk: size=15724 Split on div.section-->
+    <item id="chapter-iii-caught-red-handed" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-4.rst.html"/>
+    <!--Chunk: size=13983 Split on div.section-->
+    <item id="chapter-iv-false-evidence" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-5.rst.html"/>
+    <!--Chunk: size=11196 Split on div.section-->
+    <item id="chapter-v-the-eleventh-hour" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-6.rst.html"/>
+    <!--Chunk: size=11939 Split on div.section-->
+    <item id="chapter-vi-the-pursuit-begins" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-7.rst.html"/>
+    <!--Chunk: size=7957 Split on div.section-->
+    <item id="chapter-vii-into-the-bush" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-8.rst.html"/>
+    <!--Chunk: size=9797 Split on div.section-->
+    <item id="chapter-viii-danger-ahead" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-9.rst.html"/>
+    <!--Chunk: size=9132 Split on div.section-->
+    <item id="chapter-ix-the-captive" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-10.rst.html"/>
+    <!--Chunk: size=9267 Split on div.section-->
+    <item id="chapter-x-when-all-was-still" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-11.rst.html"/>
+    <!--Chunk: size=12014 Split on div.section-->
+    <item id="chapter-xi-a-shot-from-the-clouds" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-12.rst.html"/>
+    <!--Chunk: size=8387 Split on div.section-->
+    <item id="chapter-xii-the-mystery-of-the-running-man" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-13.rst.html"/>
+    <!--Chunk: size=18493 Split on div.section-->
+    <item id="chapter-xiii-the-black-dog" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-14.rst.html"/>
+    <!--Chunk: size=7702 Split on div.section-->
+    <item id="chapter-xiv-buried-alive" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-15.rst.html"/>
+    <!--Chunk: size=11398 Split on div.section-->
+    <item id="chapter-xv-the-valley-of-the-shadow" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-16.rst.html"/>
+    <!--Chunk: size=9842 Split on div.section-->
+    <item id="chapter-xvi-the-enemy-in-sight" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-17.rst.html"/>
+    <!--Chunk: size=11877 Split on div.section-->
+    <item id="chapter-xvii-a-shot-by-night" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-18.rst.html"/>
+    <!--Chunk: size=8142 Split on div.section-->
+    <item id="chapter-xviii-a-dash-for-liberty" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-19.rst.html"/>
+    <!--Chunk: size=12671 Split on div.section-->
+    <item id="chapter-xix-war-to-the-knife" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-20.rst.html"/>
+    <!--Chunk: size=11791 Split on div.section-->
+    <item id="chapter-xx-honour-among-thieves" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-21.rst.html"/>
+    <!--Chunk: size=7662 Split on div.section-->
+    <item id="chapter-xxi-the-last-cartridge" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-22.rst.html"/>
+    <!--Chunk: size=8179 Split on div.section-->
+    <item id="chapter-xxii-the-conquest-of-a-colony" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-23.rst.html"/>
+    <!--Chunk: size=6346 Split on div.section-->
+    <item id="chapter-xxiii-attacked" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-24.rst.html"/>
+    <!--Chunk: size=13827 Split on div.section-->
+    <item id="chapter-xxiv-the-caves" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-25.rst.html"/>
+    <!--Chunk: size=12375 Split on div.section-->
+    <item id="chapter-xxv-the-lock" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-26.rst.html"/>
+    <!--Chunk: size=9283 Split on div.section-->
+    <item id="chapter-xxvi-the-white-madman" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-27.rst.html"/>
+    <!--Chunk: size=13863 Split on div.section-->
+    <item id="chapter-xxvii-the-black-dog-bites" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-28.rst.html"/>
+    <!--Chunk: size=9765 Split on div.section-->
+    <item id="chapter-xxviii-a-race-for-life" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-29.rst.html"/>
+    <!--Chunk: size=11916 Split on div.section-->
+    <item id="chapter-xxix-the-temple" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-30.rst.html"/>
+    <!--Chunk: size=11794 Split on div.section-->
+    <item id="chapter-xxx-the-blood-spoor" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-31.rst.html"/>
+    <!--Chunk: size=10775 Split on div.section-->
+    <item id="chapter-xxxi-the-fox-in-view" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-32.rst.html"/>
+    <!--Chunk: size=9033 Split on div.section-->
+    <item id="chapter-xxxii-between-two-fires" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-33.rst.html"/>
+    <!--Chunk: size=8532 Split on div.section-->
+    <item id="chapter-xxxiii-on-the-brink-of-eternity" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-34.rst.html"/>
+    <!--Chunk: size=9356 Split on div.section-->
+    <item id="chapter-xxxiv-the-sunstone-found" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-35.rst.html"/>
+    <!--Chunk: size=10962 Split on div.section-->
+    <item id="chapter-xxxv-a-brother" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-36.rst.html"/>
+    <!--Chunk: size=6863 Split on div.section-->
+    <item id="chapter-xxxvi-the-twelfth-hour" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-37.rst.html"/>
+    <!--Chunk: size=7569 Split on div.section-->
+    <item id="chapter-xxxvii-too-late" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-38.rst.html"/>
+    <!--Chunk: size=9179 Split on div.section-->
+    <item id="chapter-xxxviii-conclusion" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-39.rst.html"/>
+    <!--Chunk: size=25350-->
+    <item id="a-word-from-project-gutenberg" media-type="application/xhtml+xml" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html"/>
+    <item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+    <item id="coverpage-wrapper" media-type="application/xhtml+xml" href="wrap0000.html"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="no"/>
+    <itemref idref="pg-header" linear="yes"/>
+    <itemref idref="id1" linear="yes"/>
+    <itemref idref="chapter-i-captain-von-hardenberg" linear="yes"/>
+    <itemref idref="chapter-ii-the-sunstone" linear="yes"/>
+    <itemref idref="chapter-iii-caught-red-handed" linear="yes"/>
+    <itemref idref="chapter-iv-false-evidence" linear="yes"/>
+    <itemref idref="chapter-v-the-eleventh-hour" linear="yes"/>
+    <itemref idref="chapter-vi-the-pursuit-begins" linear="yes"/>
+    <itemref idref="chapter-vii-into-the-bush" linear="yes"/>
+    <itemref idref="chapter-viii-danger-ahead" linear="yes"/>
+    <itemref idref="chapter-ix-the-captive" linear="yes"/>
+    <itemref idref="chapter-x-when-all-was-still" linear="yes"/>
+    <itemref idref="chapter-xi-a-shot-from-the-clouds" linear="yes"/>
+    <itemref idref="chapter-xii-the-mystery-of-the-running-man" linear="yes"/>
+    <itemref idref="chapter-xiii-the-black-dog" linear="yes"/>
+    <itemref idref="chapter-xiv-buried-alive" linear="yes"/>
+    <itemref idref="chapter-xv-the-valley-of-the-shadow" linear="yes"/>
+    <itemref idref="chapter-xvi-the-enemy-in-sight" linear="yes"/>
+    <itemref idref="chapter-xvii-a-shot-by-night" linear="yes"/>
+    <itemref idref="chapter-xviii-a-dash-for-liberty" linear="yes"/>
+    <itemref idref="chapter-xix-war-to-the-knife" linear="yes"/>
+    <itemref idref="chapter-xx-honour-among-thieves" linear="yes"/>
+    <itemref idref="chapter-xxi-the-last-cartridge" linear="yes"/>
+    <itemref idref="chapter-xxii-the-conquest-of-a-colony" linear="yes"/>
+    <itemref idref="chapter-xxiii-attacked" linear="yes"/>
+    <itemref idref="chapter-xxiv-the-caves" linear="yes"/>
+    <itemref idref="chapter-xxv-the-lock" linear="yes"/>
+    <itemref idref="chapter-xxvi-the-white-madman" linear="yes"/>
+    <itemref idref="chapter-xxvii-the-black-dog-bites" linear="yes"/>
+    <itemref idref="chapter-xxviii-a-race-for-life" linear="yes"/>
+    <itemref idref="chapter-xxix-the-temple" linear="yes"/>
+    <itemref idref="chapter-xxx-the-blood-spoor" linear="yes"/>
+    <itemref idref="chapter-xxxi-the-fox-in-view" linear="yes"/>
+    <itemref idref="chapter-xxxii-between-two-fires" linear="yes"/>
+    <itemref idref="chapter-xxxiii-on-the-brink-of-eternity" linear="yes"/>
+    <itemref idref="chapter-xxxiv-the-sunstone-found" linear="yes"/>
+    <itemref idref="chapter-xxxv-a-brother" linear="yes"/>
+    <itemref idref="chapter-xxxvi-the-twelfth-hour" linear="yes"/>
+    <itemref idref="chapter-xxxvii-too-late" linear="yes"/>
+    <itemref idref="chapter-xxxviii-conclusion" linear="yes"/>
+    <itemref idref="a-word-from-project-gutenberg" linear="yes"/>
+  </spine>
+  <guide>
+    <reference type="toc" title="CONTENTS" href="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-1.rst.html#id1"/>
+    <reference type="cover" title="Cover" href="wrap0000.html"/>
+  </guide>
+</package>

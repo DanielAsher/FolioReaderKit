@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE ncx PUBLIC '-//NISO//DTD ncx 2005-1//EN' 'http://www.daisy.org/z3986/2005/ncx-2005-1.dtd'>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en">
+  <head>
+    <meta content="http://www.gutenberg.org/ebooks/39185" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="Ebookmaker 0.4.0a5 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Across the Cameroons: A Story of War and Adventure</text>
+  </docTitle>
+  <navMap>
+    <navPoint playOrder="1" id="np-1">
+      <navLabel>
+        <text>ACROSS THE CAMEROONS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-0.rst.html#across-the-cameroons"/>
+    </navPoint>
+    <navPoint playOrder="2" id="np-2">
+      <navLabel>
+        <text>CONTENTS</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-1.rst.html#id1"/>
+    </navPoint>
+    <navPoint playOrder="3" id="np-3">
+      <navLabel>
+        <text>CHAPTER I--Captain von Hardenberg</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-2.rst.html#chapter-i-captain-von-hardenberg"/>
+    </navPoint>
+    <navPoint playOrder="4" id="np-4">
+      <navLabel>
+        <text>CHAPTER II--The Sunstone</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-3.rst.html#chapter-ii-the-sunstone"/>
+    </navPoint>
+    <navPoint playOrder="5" id="np-5">
+      <navLabel>
+        <text>CHAPTER III--Caught Red-handed</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-4.rst.html#chapter-iii-caught-red-handed"/>
+    </navPoint>
+    <navPoint playOrder="6" id="np-6">
+      <navLabel>
+        <text>CHAPTER IV--False Evidence</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-5.rst.html#chapter-iv-false-evidence"/>
+    </navPoint>
+    <navPoint playOrder="7" id="np-7">
+      <navLabel>
+        <text>CHAPTER V--The Eleventh Hour</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-6.rst.html#chapter-v-the-eleventh-hour"/>
+    </navPoint>
+    <navPoint playOrder="8" id="np-8">
+      <navLabel>
+        <text>CHAPTER VI--The Pursuit Begins</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-7.rst.html#chapter-vi-the-pursuit-begins"/>
+    </navPoint>
+    <navPoint playOrder="9" id="np-9">
+      <navLabel>
+        <text>CHAPTER VII--Into the Bush</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-8.rst.html#chapter-vii-into-the-bush"/>
+    </navPoint>
+    <navPoint playOrder="10" id="np-10">
+      <navLabel>
+        <text>CHAPTER VIII--Danger Ahead</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-9.rst.html#chapter-viii-danger-ahead"/>
+    </navPoint>
+    <navPoint playOrder="11" id="np-11">
+      <navLabel>
+        <text>CHAPTER IX--The Captive</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-10.rst.html#chapter-ix-the-captive"/>
+    </navPoint>
+    <navPoint playOrder="12" id="np-12">
+      <navLabel>
+        <text>CHAPTER X--When All was Still</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-11.rst.html#chapter-x-when-all-was-still"/>
+    </navPoint>
+    <navPoint playOrder="13" id="np-13">
+      <navLabel>
+        <text>CHAPTER XI--A Shot from the Clouds</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-12.rst.html#chapter-xi-a-shot-from-the-clouds"/>
+    </navPoint>
+    <navPoint playOrder="14" id="np-14">
+      <navLabel>
+        <text>CHAPTER XII--The Mystery of the Running Man</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-13.rst.html#chapter-xii-the-mystery-of-the-running-man"/>
+    </navPoint>
+    <navPoint playOrder="15" id="np-15">
+      <navLabel>
+        <text>CHAPTER XIII--The Black Dog</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-14.rst.html#chapter-xiii-the-black-dog"/>
+    </navPoint>
+    <navPoint playOrder="16" id="np-16">
+      <navLabel>
+        <text>CHAPTER XIV--Buried Alive!</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-15.rst.html#chapter-xiv-buried-alive"/>
+    </navPoint>
+    <navPoint playOrder="17" id="np-17">
+      <navLabel>
+        <text>CHAPTER XV--The Valley of the Shadow</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-16.rst.html#chapter-xv-the-valley-of-the-shadow"/>
+    </navPoint>
+    <navPoint playOrder="18" id="np-18">
+      <navLabel>
+        <text>CHAPTER XVI--The Enemy in Sight</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-17.rst.html#chapter-xvi-the-enemy-in-sight"/>
+    </navPoint>
+    <navPoint playOrder="19" id="np-19">
+      <navLabel>
+        <text>CHAPTER XVII--A Shot by Night</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-18.rst.html#chapter-xvii-a-shot-by-night"/>
+    </navPoint>
+    <navPoint playOrder="20" id="np-20">
+      <navLabel>
+        <text>CHAPTER XVIII--A Dash for Liberty</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-19.rst.html#chapter-xviii-a-dash-for-liberty"/>
+    </navPoint>
+    <navPoint playOrder="21" id="np-21">
+      <navLabel>
+        <text>CHAPTER XIX--War to the Knife</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-20.rst.html#chapter-xix-war-to-the-knife"/>
+    </navPoint>
+    <navPoint playOrder="22" id="np-22">
+      <navLabel>
+        <text>CHAPTER XX--Honour among Thieves</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-21.rst.html#chapter-xx-honour-among-thieves"/>
+    </navPoint>
+    <navPoint playOrder="23" id="np-23">
+      <navLabel>
+        <text>CHAPTER XXI--The Last Cartridge</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-22.rst.html#chapter-xxi-the-last-cartridge"/>
+    </navPoint>
+    <navPoint playOrder="24" id="np-24">
+      <navLabel>
+        <text>CHAPTER XXII--The Conquest of a Colony</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-23.rst.html#chapter-xxii-the-conquest-of-a-colony"/>
+    </navPoint>
+    <navPoint playOrder="25" id="np-25">
+      <navLabel>
+        <text>CHAPTER XXIII--Attacked</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-24.rst.html#chapter-xxiii-attacked"/>
+    </navPoint>
+    <navPoint playOrder="26" id="np-26">
+      <navLabel>
+        <text>CHAPTER XXIV--The Caves</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-25.rst.html#chapter-xxiv-the-caves"/>
+    </navPoint>
+    <navPoint playOrder="27" id="np-27">
+      <navLabel>
+        <text>CHAPTER XXV--The Lock</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-26.rst.html#chapter-xxv-the-lock"/>
+    </navPoint>
+    <navPoint playOrder="28" id="np-28">
+      <navLabel>
+        <text>CHAPTER XXVI--The White Madman</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-27.rst.html#chapter-xxvi-the-white-madman"/>
+    </navPoint>
+    <navPoint playOrder="29" id="np-29">
+      <navLabel>
+        <text>CHAPTER XXVII--The Black Dog Bites</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-28.rst.html#chapter-xxvii-the-black-dog-bites"/>
+    </navPoint>
+    <navPoint playOrder="30" id="np-30">
+      <navLabel>
+        <text>CHAPTER XXVIII--A Race for Life</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-29.rst.html#chapter-xxviii-a-race-for-life"/>
+    </navPoint>
+    <navPoint playOrder="31" id="np-31">
+      <navLabel>
+        <text>CHAPTER XXIX--The Temple</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-30.rst.html#chapter-xxix-the-temple"/>
+    </navPoint>
+    <navPoint playOrder="32" id="np-32">
+      <navLabel>
+        <text>CHAPTER XXX--The Blood Spoor</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-31.rst.html#chapter-xxx-the-blood-spoor"/>
+    </navPoint>
+    <navPoint playOrder="33" id="np-33">
+      <navLabel>
+        <text>CHAPTER XXXI--The Fox in View</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-32.rst.html#chapter-xxxi-the-fox-in-view"/>
+    </navPoint>
+    <navPoint playOrder="34" id="np-34">
+      <navLabel>
+        <text>CHAPTER XXXII--Between Two Fires</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-33.rst.html#chapter-xxxii-between-two-fires"/>
+    </navPoint>
+    <navPoint playOrder="35" id="np-35">
+      <navLabel>
+        <text>CHAPTER XXXIII--On the Brink of Eternity</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-34.rst.html#chapter-xxxiii-on-the-brink-of-eternity"/>
+    </navPoint>
+    <navPoint playOrder="36" id="np-36">
+      <navLabel>
+        <text>CHAPTER XXXIV--The Sunstone Found</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-35.rst.html#chapter-xxxiv-the-sunstone-found"/>
+    </navPoint>
+    <navPoint playOrder="37" id="np-37">
+      <navLabel>
+        <text>CHAPTER XXXV--A Brother</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-36.rst.html#chapter-xxxv-a-brother"/>
+    </navPoint>
+    <navPoint playOrder="38" id="np-38">
+      <navLabel>
+        <text>CHAPTER XXXVI--The Twelfth Hour</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-37.rst.html#chapter-xxxvi-the-twelfth-hour"/>
+    </navPoint>
+    <navPoint playOrder="39" id="np-39">
+      <navLabel>
+        <text>CHAPTER XXXVII--Too Late!</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-38.rst.html#chapter-xxxvii-too-late"/>
+    </navPoint>
+    <navPoint playOrder="40" id="np-40">
+      <navLabel>
+        <text>CHAPTER XXXVIII--Conclusion</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-39.rst.html#chapter-xxxviii-conclusion"/>
+    </navPoint>
+    <navPoint playOrder="41" id="np-41">
+      <navLabel>
+        <text>A Word from Project Gutenberg</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#pgepubid00000"/>
+      <navPoint playOrder="42" id="np-42">
+        <navLabel>
+          <text>The Full Project Gutenberg License</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#pgepubid00001"/>
+        <navPoint playOrder="43" id="np-43">
+          <navLabel>
+            <text>Section 1. General Terms of Use &amp; Redistributing Project Gutenberg™ electronic works</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#section-1-general-terms-of-use-redistributing-project-gutenberg-electronic-works"/>
+        </navPoint>
+        <navPoint playOrder="44" id="np-44">
+          <navLabel>
+            <text>Section 2. Information about the Mission of Project Gutenberg™</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#section-2-information-about-the-mission-of-project-gutenberg"/>
+        </navPoint>
+        <navPoint playOrder="45" id="np-45">
+          <navLabel>
+            <text>Section 3. Information about the Project Gutenberg Literary Archive Foundation</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#section-3-information-about-the-project-gutenberg-literary-archive-foundation"/>
+        </navPoint>
+        <navPoint playOrder="46" id="np-46">
+          <navLabel>
+            <text>Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#section-4-information-about-donations-to-the-project-gutenberg-literary-archive-foundation"/>
+        </navPoint>
+        <navPoint playOrder="47" id="np-47">
+          <navLabel>
+            <text>Section 5. General Information About Project Gutenberg™ electronic works.</text>
+          </navLabel>
+          <content src="@public@vhost@g@gutenberg@html@files@39185@39185-rst@39185-rst-40.rst.html#section-5-general-information-about-project-gutenberg-electronic-works"/>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

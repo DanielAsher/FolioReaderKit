@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="id">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/19676</dc:identifier>
+    <dc:creator opf:file-as="Naylor, Edward W. (Edward Woodall)">Edward W. Naylor</dc:creator>
+    <dc:title>Shakespeare and Music / With Illustrations from the Music of the 16th and 17th centuries</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Music and literature</dc:subject>
+    <dc:subject>Shakespeare, William, 1564-1616 -- Knowledge -- Music</dc:subject>
+    <dc:subject>Music -- 16th century -- History and criticism</dc:subject>
+    <dc:subject>Music -- 17th century -- History and criticism</dc:subject>
+    <dc:date opf:event="publication">2006-10-31</dc:date>
+    <dc:date opf:event="conversion">2016-06-10T09:15:00.962896+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/19676/19676-h/19676-h.htm</dc:source>
+  </metadata>
+  <manifest>
+    <!--Image: 92 x 31 size=2185 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@cite.jpg" media-type="image/jpeg" id="item1"/>
+    <!--Image: 364 x 500 size=23114 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@frontispiece.jpg" media-type="image/jpeg" id="item2"/>
+    <!--Image: 36 x 26 size=1168 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@violin.jpg" media-type="image/jpeg" id="item3"/>
+    <!--Image: 700 x 247 size=22714 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music01.png" media-type="image/png" id="item4"/>
+    <!--Image: 700 x 163 size=9474 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music02.png" media-type="image/png" id="item5"/>
+    <!--Image: 162 x 26 size=3098 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@notes.jpg" media-type="image/jpeg" id="item6"/>
+    <!--Image: 700 x 194 size=8076 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music03.png" media-type="image/png" id="item7"/>
+    <!--Image: 700 x 176 size=9573 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music04.png" media-type="image/png" id="item8"/>
+    <!--Image: 700 x 189 size=6079 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music05.png" media-type="image/png" id="item9"/>
+    <!--Image: 700 x 86 size=5487 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music06.png" media-type="image/png" id="item10"/>
+    <!--Image: 700 x 400 size=15339 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music07.png" media-type="image/png" id="item11"/>
+    <!--Image: 700 x 190 size=9078 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music08.png" media-type="image/png" id="item12"/>
+    <!--Image: 20 x 11 size=815 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@fermata.jpg" media-type="image/jpeg" id="item13"/>
+    <!--Image: 700 x 191 size=10277 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music09.png" media-type="image/png" id="item14"/>
+    <!--Image: 700 x 196 size=10417 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music10.png" media-type="image/png" id="item15"/>
+    <!--Image: 700 x 184 size=10907 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music11.png" media-type="image/png" id="item16"/>
+    <!--Image: 700 x 265 size=20770 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music12.png" media-type="image/png" id="item17"/>
+    <!--Image: 725 x 107 size=6958 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music13.png" media-type="image/png" id="item18"/>
+    <!--Image: 700 x 108 size=7418 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music14.png" media-type="image/png" id="item19"/>
+    <!--Image: 700 x 255 size=21948 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music15.png" media-type="image/png" id="item20"/>
+    <!--Image: 700 x 167 size=11064 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music16.png" media-type="image/png" id="item21"/>
+    <!--Image: 700 x 201 size=20584 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music17.png" media-type="image/png" id="item22"/>
+    <!--Image: 700 x 400 size=19696 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music18.png" media-type="image/png" id="item23"/>
+    <!--Image: 700 x 164 size=7419 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music19.png" media-type="image/png" id="item24"/>
+    <!--Image: 700 x 160 size=14279 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music20.png" media-type="image/png" id="item25"/>
+    <!--Image: 700 x 279 size=20301 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music21.png" media-type="image/png" id="item26"/>
+    <!--Image: 700 x 305 size=23618 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music22.png" media-type="image/png" id="item27"/>
+    <!--Image: 700 x 163 size=14512 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music23.png" media-type="image/png" id="item28"/>
+    <!--Image: 700 x 82 size=7870 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music24.png" media-type="image/png" id="item29"/>
+    <!--Image: 700 x 285 size=14860 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music25.png" media-type="image/png" id="item30"/>
+    <!--Image: 700 x 77 size=7817 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music26.png" media-type="image/png" id="item31"/>
+    <!--Image: 700 x 391 size=26577 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music27.png" media-type="image/png" id="item32"/>
+    <!--Image: 700 x 164 size=15506 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music28.png" media-type="image/png" id="item33"/>
+    <!--Image: 700 x 180 size=14555 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music29.png" media-type="image/png" id="item34"/>
+    <!--Image: 700 x 480 size=18004 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music30.png" media-type="image/png" id="item35"/>
+    <!--Image: 700 x 832 size=43760 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music31.png" media-type="image/png" id="item36"/>
+    <!--Image: 700 x 380 size=20229 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music31a.png" media-type="image/png" id="item37"/>
+    <!--Image: 700 x 395 size=34988 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music32.png" media-type="image/png" id="item38"/>
+    <!--Image: 701 x 379 size=17356 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music33.png" media-type="image/png" id="item39"/>
+    <!--Image: 700 x 791 size=42176 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music34.png" media-type="image/png" id="item40"/>
+    <!--Image: 700 x 279 size=23017 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music35.png" media-type="image/png" id="item41"/>
+    <!--Image: 700 x 210 size=19099 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music36.png" media-type="image/png" id="item42"/>
+    <!--Image: 700 x 102 size=9862 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music37.png" media-type="image/png" id="item43"/>
+    <!--Image: 700 x 326 size=22941 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music38.png" media-type="image/png" id="item44"/>
+    <!--Image: 700 x 411 size=16574 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music39.png" media-type="image/png" id="item45"/>
+    <!--Image: 18 x 18 size=690 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@segno.jpg" media-type="image/jpeg" id="item46"/>
+    <!--Image: 700 x 199 size=12071 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music40.png" media-type="image/png" id="item47"/>
+    <!--Image: 700 x 305 size=13283 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music41.png" media-type="image/png" id="item48"/>
+    <!--Image: 700 x 789 size=43002 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music42.png" media-type="image/png" id="item49"/>
+    <!--Image: 700 x 165 size=14772 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music43.png" media-type="image/png" id="item50"/>
+    <!--Image: 700 x 800 size=29667 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music44.png" media-type="image/png" id="item51"/>
+    <!--Image: 700 x 766 size=32625 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music44a.png" media-type="image/png" id="item52"/>
+    <!--Image: 700 x 758 size=38926 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music45.png" media-type="image/png" id="item53"/>
+    <!--Image: 700 x 300 size=10154 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music46.png" media-type="image/png" id="item54"/>
+    <!--Image: 700 x 410 size=25479 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music47.png" media-type="image/png" id="item55"/>
+    <!--Image: 700 x 351 size=17780 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music48.png" media-type="image/png" id="item56"/>
+    <!--Image: 700 x 206 size=14715 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music49.png" media-type="image/png" id="item57"/>
+    <!--Image: 700 x 376 size=15413 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music50.png" media-type="image/png" id="item58"/>
+    <!--Image: 700 x 271 size=14601 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music51.png" media-type="image/png" id="item59"/>
+    <!--Image: 700 x 782 size=48397 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music52.png" media-type="image/png" id="item60"/>
+    <!--Image: 700 x 751 size=33536 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music53.png" media-type="image/png" id="item61"/>
+    <!--Image: 13 x 14 size=568 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@repeat.jpg" media-type="image/jpeg" id="item62"/>
+    <!--Image: 700 x 194 size=15006 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music54.png" media-type="image/png" id="item63"/>
+    <!--Image: 700 x 62 size=2883 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music55.png" media-type="image/png" id="item64"/>
+    <!--Image: 700 x 674 size=11159 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music56.png" media-type="image/png" id="item65"/>
+    <!--Image: 700 x 50 size=4628 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music57.png" media-type="image/png" id="item66"/>
+    <!--Image: 700 x 575 size=31352 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music58.png" media-type="image/png" id="item67"/>
+    <!--Image: 700 x 176 size=10202 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music59.png" media-type="image/png" id="item68"/>
+    <!--Image: 700 x 147 size=9456 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music60.png" media-type="image/png" id="item69"/>
+    <!--Image: 700 x 177 size=9828 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music61.png" media-type="image/png" id="item70"/>
+    <!--Image: 700 x 113 size=9404 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music62.png" media-type="image/png" id="item71"/>
+    <!--Image: 700 x 191 size=16059 -->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@images@music63.png" media-type="image/png" id="item72"/>
+    <item href="pgepub.css" media-type="text/css" id="item73"/>
+    <item href="0.css" media-type="text/css" id="item74"/>
+    <item href="1.css" media-type="text/css" id="item75"/>
+    <!--Chunk: size=53288 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-0.htm.html" media-type="application/xhtml+xml" id="item76"/>
+    <!--Chunk: size=52548 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-1.htm.html" media-type="application/xhtml+xml" id="item77"/>
+    <!--Chunk: size=54331 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-2.htm.html" media-type="application/xhtml+xml" id="item78"/>
+    <!--Chunk: size=51273 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-3.htm.html" media-type="application/xhtml+xml" id="item79"/>
+    <!--Chunk: size=56041 Split on div-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-4.htm.html" media-type="application/xhtml+xml" id="item80"/>
+    <!--Chunk: size=81970 Split on p-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-5.htm.html" media-type="application/xhtml+xml" id="item81"/>
+    <!--Chunk: size=15208 Split on p-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-6.htm.html" media-type="application/xhtml+xml" id="item82"/>
+    <!--Chunk: size=102253 Split on a.pginternal-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-7.htm.html" media-type="application/xhtml+xml" id="Autolycus"/>
+    <!--Chunk: size=102293 Split on a.pginternal-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-8.htm.html" media-type="application/xhtml+xml" id="Fitzwilliam"/>
+    <!--Chunk: size=102391 Split on br-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-9.htm.html" media-type="application/xhtml+xml" id="Page_220"/>
+    <!--Chunk: size=99542-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-10.htm.html" media-type="application/xhtml+xml" id="item83"/>
+    <!--Chunk: size=33054-->
+    <item href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-11.htm.html" media-type="application/xhtml+xml" id="item84"/>
+    <item href="toc.ncx" media-type="application/x-dtbncx+xml" id="ncx"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref linear="yes" idref="item76"/>
+    <itemref linear="yes" idref="item77"/>
+    <itemref linear="yes" idref="item78"/>
+    <itemref linear="yes" idref="item79"/>
+    <itemref linear="yes" idref="item80"/>
+    <itemref linear="yes" idref="item81"/>
+    <itemref linear="yes" idref="item82"/>
+    <itemref linear="yes" idref="Autolycus"/>
+    <itemref linear="yes" idref="Fitzwilliam"/>
+    <itemref linear="yes" idref="Page_220"/>
+    <itemref linear="yes" idref="item83"/>
+    <itemref linear="yes" idref="item84"/>
+  </spine>
+  <guide>
+    <reference href="@public@vhost@g@gutenberg@html@files@19676@19676-h@19676-h-0.htm.html#pgepubid00005" type="toc" title="CONTENTS"/>
+  </guide>
+</package>
