@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE ncx PUBLIC '-//NISO//DTD ncx 2005-1//EN' 'http://www.daisy.org/z3986/2005/ncx-2005-1.dtd'>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" xml:lang="en" version="2005-1">
+  <head>
+    <meta content="http://www.gutenberg.org/ebooks/14868" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="Ebookmaker 0.4.0a5 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>The Tailor of Gloucester</text>
+  </docTitle>
+  <navMap>
+    <navPoint playOrder="1" id="np-1">
+      <navLabel>
+        <text>THE TAILOR OF</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00000"/>
+    </navPoint>
+    <navPoint playOrder="2" id="np-2">
+      <navLabel>
+        <text>GLOUCESTER</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00001"/>
+      <navPoint playOrder="3" id="np-3">
+        <navLabel>
+          <text>BY</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00002"/>
+      </navPoint>
+      <navPoint playOrder="4" id="np-4">
+        <navLabel>
+          <text>BEATRIX POTTER</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00003"/>
+      </navPoint>
+      <navPoint playOrder="5" id="np-5">
+        <navLabel>
+          <text>THE TAILOR OF GLOUCESTER</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00004"/>
+      </navPoint>
+      <navPoint playOrder="6" id="np-6">
+        <navLabel>
+          <text>THE END</text>
+        </navLabel>
+        <content src="@public@vhost@g@gutenberg@html@files@14868@14868-h@14868-h-0.htm.html#pgepubid00005"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

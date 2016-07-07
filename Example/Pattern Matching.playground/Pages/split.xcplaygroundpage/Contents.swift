@@ -41,6 +41,9 @@ let simpleSplit =
 
 print(simpleSplit)
 
+enum T { case br, int }
+let arr = [T.int, T.br, T.int, T.int, T.br, T.int]
 
-
+let split = arr.split { switch $0 { case .br: return true; default: return false } }
+let pages = split.flatMap {$0}
 

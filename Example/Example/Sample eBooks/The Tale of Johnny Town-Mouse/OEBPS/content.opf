@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<package xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.idpf.org/2007/opf" unique-identifier="id" version="2.0">
+  <metadata>
+    <dc:rights>Public domain in the USA.</dc:rights>
+    <dc:identifier id="id" opf:scheme="URI">http://www.gutenberg.org/ebooks/15284</dc:identifier>
+    <dc:creator opf:file-as="Potter, Beatrix">Beatrix Potter</dc:creator>
+    <dc:title>The Tale of Johnny Town-Mouse</dc:title>
+    <dc:language xsi:type="dcterms:RFC4646">en</dc:language>
+    <dc:subject>Folklore</dc:subject>
+    <dc:subject>Mice -- Fiction</dc:subject>
+    <dc:subject>Fables</dc:subject>
+    <dc:date opf:event="publication">2005-03-08</dc:date>
+    <dc:date opf:event="conversion">2016-06-08T08:04:42.197618+00:00</dc:date>
+    <dc:source>http://www.gutenberg.org/files/15284/15284-h/15284-h.htm</dc:source>
+    <meta name="cover" content="item1"/>
+  </metadata>
+  <manifest>
+    <!--Image: 500 x 618 size=47206 -->
+    <item id="item1" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@cover.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 592 size=42651 -->
+    <item id="item2" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town01.jpg" media-type="image/jpeg"/>
+    <!--Image: 250 x 360 size=18659 -->
+    <item id="item3" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@title.jpg" media-type="image/jpeg"/>
+    <!--Image: 300 x 370 size=40172 -->
+    <item id="item4" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town02.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 404 size=32124 -->
+    <item id="item5" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town03.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 653 size=48804 -->
+    <item id="item6" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town04.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 689 size=45722 -->
+    <item id="item7" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town05.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 599 size=42007 -->
+    <item id="item8" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town06.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 557 size=28534 -->
+    <item id="item9" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town07.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 390 size=34270 -->
+    <item id="item10" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town08.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 399 size=32063 -->
+    <item id="item11" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town09.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 404 size=31166 -->
+    <item id="item12" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town10.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 646 size=35936 -->
+    <item id="item13" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town11.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 629 size=46414 -->
+    <item id="item14" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town12.jpg" media-type="image/jpeg"/>
+    <!--Image: 795 x 1119 size=86802 -->
+    <item id="item15" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town13.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 599 size=56383 -->
+    <item id="item16" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town14.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 635 size=53892 -->
+    <item id="item17" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town15.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 622 size=53381 -->
+    <item id="item18" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town16.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 681 size=39314 -->
+    <item id="item19" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town17.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 565 size=46213 -->
+    <item id="item20" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town18.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 555 size=44369 -->
+    <item id="item21" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town19.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 588 size=52173 -->
+    <item id="item22" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town20.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 541 size=50862 -->
+    <item id="item23" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town21.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 432 size=37089 -->
+    <item id="item24" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town22.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 629 size=40076 -->
+    <item id="item25" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town23.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 626 size=50525 -->
+    <item id="item26" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town24.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 601 size=54822 -->
+    <item id="item27" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town25.jpg" media-type="image/jpeg"/>
+    <!--Image: 500 x 591 size=43914 -->
+    <item id="item28" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town26.jpg" media-type="image/jpeg"/>
+    <!--Image: 800 x 833 size=113511 (was 927 x 966 scale=0.86) q=85-->
+    <item id="item29" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town27.jpg" media-type="image/jpeg"/>
+    <item id="item30" href="pgepub.css" media-type="text/css"/>
+    <item id="item31" href="0.css" media-type="text/css"/>
+    <item id="item32" href="1.css" media-type="text/css"/>
+    <!--Chunk: size=44052-->
+    <item id="item33" href="@public@vhost@g@gutenberg@html@files@15284@15284-h@15284-h-0.htm.html" media-type="application/xhtml+xml"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="coverpage-wrapper" href="wrap0000.html" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="coverpage-wrapper" linear="no"/>
+    <itemref idref="item33" linear="yes"/>
+  </spine>
+  <guide>
+    <reference title="Cover" href="wrap0000.html" type="cover"/>
+  </guide>
+</package>

@@ -14,10 +14,11 @@
 		1A42C2941C0E3883000F2137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A42C2931C0E3883000F2137 /* Assets.xcassets */; };
 		1A42C2A21C0E3A8D000F2137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A42C2A01C0E3A8D000F2137 /* LaunchScreen.storyboard */; };
 		657641A51D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */ = {isa = PBXBuildFile; fileRef = 657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */; };
-		65F14C531D1A88EC00F5E5B3 /* Moby Dick.epub in Resources */ = {isa = PBXBuildFile; fileRef = 65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */; };
 		6E3C4A3F1C3C6708009CBC8C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3C4A3E1C3C6708009CBC8C /* MediaPlayer.framework */; };
-		6E5C9B051C4037B7008F6FD9 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */; };
-		6E5C9B091C403968008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
+		C73F00821D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */; };
+		C73F00831D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */; };
+		C73F00841D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */; };
+		C73F00851D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */; };
 		C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */ = {isa = PBXBuildFile; fileRef = 657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */; };
 		C792C8BD1D240A3700C636DD /* Xml.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BC1D240A3700C636DD /* Xml.swift */; };
 		C792C8CB1D266B7D00C636DD /* TextImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */; };
@@ -31,43 +32,7 @@
 		C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */; };
 		C7D396AF1D27BF8B00F18529 /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
 		C7D396B01D27BF9200F18529 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
-		C7D396C21D27D5DC00F18529 /* A Trip to Cuba.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B11D27D5DC00F18529 /* A Trip to Cuba.epub */; };
-		C7D396C31D27D5DC00F18529 /* Across the Cameroons.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B21D27D5DC00F18529 /* Across the Cameroons.epub */; };
-		C7D396C41D27D5DC00F18529 /* Antarctic Penguins.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B31D27D5DC00F18529 /* Antarctic Penguins.epub */; };
-		C7D396C51D27D5DC00F18529 /* Cocoa and Chocolate.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B41D27D5DC00F18529 /* Cocoa and Chocolate.epub */; };
-		C7D396C61D27D5DC00F18529 /* From Pole to Pole.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B51D27D5DC00F18529 /* From Pole to Pole.epub */; };
-		C7D396C71D27D5DC00F18529 /* History of Beasts.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B61D27D5DC00F18529 /* History of Beasts.epub */; };
-		C7D396C81D27D5DC00F18529 /* In the Heart of Africa.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B71D27D5DC00F18529 /* In the Heart of Africa.epub */; };
-		C7D396C91D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B81D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub */; };
-		C7D396CA1D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B91D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub */; };
-		C7D396CB1D27D5DC00F18529 /* Poems on Travel.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BA1D27D5DC00F18529 /* Poems on Travel.epub */; };
-		C7D396CC1D27D5DC00F18529 /* Shakespeare and Music.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BB1D27D5DC00F18529 /* Shakespeare and Music.epub */; };
-		C7D396CD1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BC1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub */; };
-		C7D396CE1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BD1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub */; };
-		C7D396CF1D27D5DC00F18529 /* The Industries of Animals.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BE1D27D5DC00F18529 /* The Industries of Animals.epub */; };
-		C7D396D01D27D5DC00F18529 /* The Story of an Ostrich.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BF1D27D5DC00F18529 /* The Story of an Ostrich.epub */; };
-		C7D396D11D27D5DC00F18529 /* The Woodpeckers.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396C01D27D5DC00F18529 /* The Woodpeckers.epub */; };
-		C7D396D21D27D5DC00F18529 /* Travels in West Africa.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396C11D27D5DC00F18529 /* Travels in West Africa.epub */; };
-		C7D396D31D27D5E900F18529 /* A Trip to Cuba.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B11D27D5DC00F18529 /* A Trip to Cuba.epub */; };
-		C7D396D41D27D5E900F18529 /* Across the Cameroons.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B21D27D5DC00F18529 /* Across the Cameroons.epub */; };
-		C7D396D51D27D5E900F18529 /* Antarctic Penguins.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B31D27D5DC00F18529 /* Antarctic Penguins.epub */; };
-		C7D396D61D27D5E900F18529 /* Cocoa and Chocolate.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B41D27D5DC00F18529 /* Cocoa and Chocolate.epub */; };
-		C7D396D71D27D5E900F18529 /* From Pole to Pole.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B51D27D5DC00F18529 /* From Pole to Pole.epub */; };
-		C7D396D81D27D5E900F18529 /* History of Beasts.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B61D27D5DC00F18529 /* History of Beasts.epub */; };
-		C7D396D91D27D5E900F18529 /* In the Heart of Africa.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B71D27D5DC00F18529 /* In the Heart of Africa.epub */; };
-		C7D396DA1D27D5E900F18529 /* Introduction of the Locomotive Safety Truck.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B81D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub */; };
-		C7D396DB1D27D5E900F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396B91D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub */; };
-		C7D396DC1D27D5E900F18529 /* Poems on Travel.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BA1D27D5DC00F18529 /* Poems on Travel.epub */; };
-		C7D396DD1D27D5E900F18529 /* Shakespeare and Music.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BB1D27D5DC00F18529 /* Shakespeare and Music.epub */; };
-		C7D396DE1D27D5E900F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BC1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub */; };
-		C7D396DF1D27D5E900F18529 /* The 2010 CIA World Factbook by United States.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BD1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub */; };
-		C7D396E01D27D5E900F18529 /* The Industries of Animals.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BE1D27D5DC00F18529 /* The Industries of Animals.epub */; };
-		C7D396E11D27D5E900F18529 /* The Story of an Ostrich.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396BF1D27D5DC00F18529 /* The Story of an Ostrich.epub */; };
-		C7D396E21D27D5E900F18529 /* The Woodpeckers.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396C01D27D5DC00F18529 /* The Woodpeckers.epub */; };
-		C7D396E31D27D5E900F18529 /* Travels in West Africa.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D396C11D27D5DC00F18529 /* Travels in West Africa.epub */; };
 		CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10C1331C572A4B0049165D /* FolioReaderTests.swift */; };
-		CA61603F1C572C4C00ACD034 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */; };
-		CA6160401C572C4C00ACD034 /* The Silver Chair.epub in Resources */ = {isa = PBXBuildFile; fileRef = 6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */; };
 		CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF233281C57E1F400CB930C /* SharingProviderTests.swift */; };
 		DB8597912791266AA602B5B1 /* Pods_FolioReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27131F41E20F15F72AAF7176 /* Pods_FolioReaderTests.framework */; };
 /* End PBXBuildFile section */
@@ -95,11 +60,10 @@
 		3CE90B4095B5C7E6237EEBDD /* Pods-FolioReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolioReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C8EADB52E1D834750CD7D23 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Peter Rabbit - Beatrix Potter.epub"; sourceTree = "<group>"; };
-		65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moby Dick.epub"; sourceTree = "<group>"; };
 		6E3C4A3E1C3C6708009CBC8C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Silver Chair.epub"; sourceTree = "<group>"; };
-		6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Adventures Of Sherlock Holmes - Adventure I.epub"; sourceTree = "<group>"; };
 		8E1BE6465444C567F5D1B8E6 /* Pods-FolioReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolioReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tailor of Gloucester.epub"; sourceTree = "<group>"; };
+		C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Johnny Town-Mouse.epub"; sourceTree = "<group>"; };
 		C792C8B81D23E98900C636DD /* StoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBook.swift; path = ../FolioReaderTests/StoryBook.swift; sourceTree = "<group>"; };
 		C792C8BA1D23E99700C636DD /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPage.swift; path = ../FolioReaderTests/StoryPage.swift; sourceTree = "<group>"; };
 		C792C8BC1D240A3700C636DD /* Xml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xml.swift; sourceTree = "<group>"; };
@@ -112,23 +76,6 @@
 		C792C8D41D268C3400C636DD /* Swift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift.playground; sourceTree = "<group>"; };
 		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
-		C7D396B11D27D5DC00F18529 /* A Trip to Cuba.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "A Trip to Cuba.epub"; sourceTree = "<group>"; };
-		C7D396B21D27D5DC00F18529 /* Across the Cameroons.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Across the Cameroons.epub"; sourceTree = "<group>"; };
-		C7D396B31D27D5DC00F18529 /* Antarctic Penguins.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Antarctic Penguins.epub"; sourceTree = "<group>"; };
-		C7D396B41D27D5DC00F18529 /* Cocoa and Chocolate.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocoa and Chocolate.epub"; sourceTree = "<group>"; };
-		C7D396B51D27D5DC00F18529 /* From Pole to Pole.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "From Pole to Pole.epub"; sourceTree = "<group>"; };
-		C7D396B61D27D5DC00F18529 /* History of Beasts.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "History of Beasts.epub"; sourceTree = "<group>"; };
-		C7D396B71D27D5DC00F18529 /* In the Heart of Africa.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "In the Heart of Africa.epub"; sourceTree = "<group>"; };
-		C7D396B81D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Introduction of the Locomotive Safety Truck.epub"; sourceTree = "<group>"; };
-		C7D396B91D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mozart The Man and the Artist, as Revealed in His Own Words.epub"; sourceTree = "<group>"; };
-		C7D396BA1D27D5DC00F18529 /* Poems on Travel.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poems on Travel.epub"; sourceTree = "<group>"; };
-		C7D396BB1D27D5DC00F18529 /* Shakespeare and Music.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shakespeare and Music.epub"; sourceTree = "<group>"; };
-		C7D396BC1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub"; sourceTree = "<group>"; };
-		C7D396BD1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The 2010 CIA World Factbook by United States.epub"; sourceTree = "<group>"; };
-		C7D396BE1D27D5DC00F18529 /* The Industries of Animals.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Industries of Animals.epub"; sourceTree = "<group>"; };
-		C7D396BF1D27D5DC00F18529 /* The Story of an Ostrich.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Story of an Ostrich.epub"; sourceTree = "<group>"; };
-		C7D396C01D27D5DC00F18529 /* The Woodpeckers.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Woodpeckers.epub"; sourceTree = "<group>"; };
-		C7D396C11D27D5DC00F18529 /* Travels in West Africa.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Travels in West Africa.epub"; sourceTree = "<group>"; };
 		CA10C1311C572A4B0049165D /* FolioReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10C1331C572A4B0049165D /* FolioReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderTests.swift; sourceTree = "<group>"; };
 		CA10C1351C572A4B0049165D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -215,27 +162,9 @@
 		6E5C9B011C4037B7008F6FD9 /* Sample eBooks */ = {
 			isa = PBXGroup;
 			children = (
-				65F14C521D1A88EC00F5E5B3 /* Moby Dick.epub */,
-				6E5C9B081C403942008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub */,
-				6E5C9B031C4037B7008F6FD9 /* The Silver Chair.epub */,
 				657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */,
-				C7D396B11D27D5DC00F18529 /* A Trip to Cuba.epub */,
-				C7D396B21D27D5DC00F18529 /* Across the Cameroons.epub */,
-				C7D396B31D27D5DC00F18529 /* Antarctic Penguins.epub */,
-				C7D396B41D27D5DC00F18529 /* Cocoa and Chocolate.epub */,
-				C7D396B51D27D5DC00F18529 /* From Pole to Pole.epub */,
-				C7D396B61D27D5DC00F18529 /* History of Beasts.epub */,
-				C7D396B71D27D5DC00F18529 /* In the Heart of Africa.epub */,
-				C7D396B81D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub */,
-				C7D396B91D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub */,
-				C7D396BA1D27D5DC00F18529 /* Poems on Travel.epub */,
-				C7D396BB1D27D5DC00F18529 /* Shakespeare and Music.epub */,
-				C7D396BC1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub */,
-				C7D396BD1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub */,
-				C7D396BE1D27D5DC00F18529 /* The Industries of Animals.epub */,
-				C7D396BF1D27D5DC00F18529 /* The Story of an Ostrich.epub */,
-				C7D396C01D27D5DC00F18529 /* The Woodpeckers.epub */,
-				C7D396C11D27D5DC00F18529 /* Travels in West Africa.epub */,
+				C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */,
+				C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */,
 			);
 			path = "Sample eBooks";
 			sourceTree = "<group>";
@@ -372,30 +301,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D396D01D27D5DC00F18529 /* The Story of an Ostrich.epub in Resources */,
-				C7D396CC1D27D5DC00F18529 /* Shakespeare and Music.epub in Resources */,
-				C7D396C71D27D5DC00F18529 /* History of Beasts.epub in Resources */,
 				1A42C2941C0E3883000F2137 /* Assets.xcassets in Resources */,
 				1A42C2A21C0E3A8D000F2137 /* LaunchScreen.storyboard in Resources */,
-				C7D396C31D27D5DC00F18529 /* Across the Cameroons.epub in Resources */,
-				C7D396C61D27D5DC00F18529 /* From Pole to Pole.epub in Resources */,
-				6E5C9B091C403968008F6FD9 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */,
-				C7D396C51D27D5DC00F18529 /* Cocoa and Chocolate.epub in Resources */,
-				C7D396C21D27D5DC00F18529 /* A Trip to Cuba.epub in Resources */,
-				C7D396D11D27D5DC00F18529 /* The Woodpeckers.epub in Resources */,
+				C73F00841D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */,
 				657641A51D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
-				C7D396CF1D27D5DC00F18529 /* The Industries of Animals.epub in Resources */,
-				65F14C531D1A88EC00F5E5B3 /* Moby Dick.epub in Resources */,
-				C7D396D21D27D5DC00F18529 /* Travels in West Africa.epub in Resources */,
-				C7D396CA1D27D5DC00F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub in Resources */,
-				C7D396C81D27D5DC00F18529 /* In the Heart of Africa.epub in Resources */,
-				6E5C9B051C4037B7008F6FD9 /* The Silver Chair.epub in Resources */,
 				1A42C2921C0E3883000F2137 /* Main.storyboard in Resources */,
-				C7D396C91D27D5DC00F18529 /* Introduction of the Locomotive Safety Truck.epub in Resources */,
-				C7D396CD1D27D5DC00F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub in Resources */,
-				C7D396CE1D27D5DC00F18529 /* The 2010 CIA World Factbook by United States.epub in Resources */,
-				C7D396C41D27D5DC00F18529 /* Antarctic Penguins.epub in Resources */,
-				C7D396CB1D27D5DC00F18529 /* Poems on Travel.epub in Resources */,
+				C73F00821D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,26 +314,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D396E01D27D5E900F18529 /* The Industries of Animals.epub in Resources */,
-				C7D396DC1D27D5E900F18529 /* Poems on Travel.epub in Resources */,
-				C7D396DE1D27D5E900F18529 /* Textiles, for Commercial, Industrial, and Domestic Arts Schools.epub in Resources */,
-				CA6160401C572C4C00ACD034 /* The Silver Chair.epub in Resources */,
 				C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
-				C7D396D61D27D5E900F18529 /* Cocoa and Chocolate.epub in Resources */,
-				C7D396E31D27D5E900F18529 /* Travels in West Africa.epub in Resources */,
-				C7D396DF1D27D5E900F18529 /* The 2010 CIA World Factbook by United States.epub in Resources */,
-				CA61603F1C572C4C00ACD034 /* The Adventures Of Sherlock Holmes - Adventure I.epub in Resources */,
-				C7D396E11D27D5E900F18529 /* The Story of an Ostrich.epub in Resources */,
-				C7D396D51D27D5E900F18529 /* Antarctic Penguins.epub in Resources */,
-				C7D396D41D27D5E900F18529 /* Across the Cameroons.epub in Resources */,
-				C7D396DB1D27D5E900F18529 /* Mozart The Man and the Artist, as Revealed in His Own Words.epub in Resources */,
-				C7D396D81D27D5E900F18529 /* History of Beasts.epub in Resources */,
-				C7D396DA1D27D5E900F18529 /* Introduction of the Locomotive Safety Truck.epub in Resources */,
-				C7D396E21D27D5E900F18529 /* The Woodpeckers.epub in Resources */,
-				C7D396DD1D27D5E900F18529 /* Shakespeare and Music.epub in Resources */,
-				C7D396D31D27D5E900F18529 /* A Trip to Cuba.epub in Resources */,
-				C7D396D91D27D5E900F18529 /* In the Heart of Africa.epub in Resources */,
-				C7D396D71D27D5E900F18529 /* From Pole to Pole.epub in Resources */,
+				C73F00831D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */,
+				C73F00851D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

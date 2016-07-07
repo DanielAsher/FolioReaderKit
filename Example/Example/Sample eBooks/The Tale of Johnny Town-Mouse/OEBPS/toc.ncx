@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE ncx PUBLIC '-//NISO//DTD ncx 2005-1//EN' 'http://www.daisy.org/z3986/2005/ncx-2005-1.dtd'>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" xml:lang="en" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="http://www.gutenberg.org/ebooks/15284"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:generator" content="Ebookmaker 0.4.0a5 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>The Tale of Johnny Town-Mouse</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="np-1" playOrder="1">
+      <navLabel>
+        <text>The Tale Of Johnny Town-mouse</text>
+      </navLabel>
+      <content src="@public@vhost@g@gutenberg@html@files@15284@15284-h@15284-h-0.htm.html#pgepubid00000"/>
+    </navPoint>
+  </navMap>
+</ncx>

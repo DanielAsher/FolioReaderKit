@@ -36,5 +36,14 @@ if let value = qs[0] {
 let rs =
         qs.flatMap { $0 }
 
+let ccc = [[1,3],[5,7,94,2],[7,86,3,7],[8,3,23,33]]
 
+let me = ["heklo", "me", "dgge", "dhjs"]
+
+let reduce = me.reduce("",combine: +)
+
+
+
+
+//print(ccc.flatMap{ $0 })
 
