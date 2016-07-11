@@ -3,5 +3,6 @@
     <pages>
         <page name='Dictionary vs Array'/>
         <page name='Subscript func'/>
+        <page name='BooleanType'/>
     </pages>
 </playground>
