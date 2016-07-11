@@ -7,3 +7,27 @@
 //
 
 import Foundation
+@testable import FolioReaderKit
+
+public func nilString(str: String?) -> String?
+{
+    if str == nil {
+        return String()
+        
+    }else{
+        return str
+    }
+    
+}
+
+func nilFRResourse(res: FRResource?) -> String?
+{
+    
+    if res == nil {
+        return String()
+        
+    }else{
+        return res?.fullHref
+    }
+    
+}
