@@ -19,6 +19,7 @@
 		C73F00831D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */; };
 		C73F00841D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */; };
 		C73F00851D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */; };
+		C777E2381D33D95D0099F39B /* ElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777E2361D33D5780099F39B /* ElementType.swift */; };
 		C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */ = {isa = PBXBuildFile; fileRef = 657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */; };
 		C792C8BD1D240A3700C636DD /* Xml.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BC1D240A3700C636DD /* Xml.swift */; };
 		C792C8CB1D266B7D00C636DD /* TextImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */; };
@@ -65,6 +66,7 @@
 		8E1BE6465444C567F5D1B8E6 /* Pods-FolioReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FolioReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FolioReaderTests/Pods-FolioReaderTests.release.xcconfig"; sourceTree = "<group>"; };
 		C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tailor of Gloucester.epub"; sourceTree = "<group>"; };
 		C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Johnny Town-Mouse.epub"; sourceTree = "<group>"; };
+		C777E2361D33D5780099F39B /* ElementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
 		C792C8B81D23E98900C636DD /* StoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBook.swift; path = ../FolioReaderTests/StoryBook.swift; sourceTree = "<group>"; };
 		C792C8BA1D23E99700C636DD /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPage.swift; path = ../FolioReaderTests/StoryPage.swift; sourceTree = "<group>"; };
 		C792C8BC1D240A3700C636DD /* Xml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xml.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				C792C8B81D23E98900C636DD /* StoryBook.swift */,
 				C792C8BA1D23E99700C636DD /* StoryPage.swift */,
 				C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */,
+				C777E2361D33D5780099F39B /* ElementType.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */,
 				C7D396B01D27BF9200F18529 /* StoryPage.swift in Sources */,
 				CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */,
+				C777E2381D33D95D0099F39B /* ElementType.swift in Sources */,
 				C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */,
 				C7D396AF1D27BF8B00F18529 /* StoryBook.swift in Sources */,
 				C792C8BD1D240A3700C636DD /* Xml.swift in Sources */,

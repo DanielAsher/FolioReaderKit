@@ -38,23 +38,7 @@ class TextImageViewController: UIViewController {
         "The Tailor of Gloucester",
         "The Tale of Peter Rabbit - Beatrix Potter",
     ]
- 
-    enum ElementType : CustomStringConvertible {
-        case text(String)
-        case image(String) // typealias Href
-        case firstPageMarker
-        case pagebreak
-        
-        var description: String {
-            switch self {
-            case let .text(str): return "\(str)"
-            case let .image(href) : return "\(href)"
-            case .firstPageMarker: return "firstPage"
-            case .pagebreak: return "pagebreak: "
-                
-            }
-        }
-    }
+
     
     
     override func viewDidLoad() 
