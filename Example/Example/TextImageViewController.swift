@@ -15,13 +15,12 @@ import AEXML
 class TextImageViewController: UIViewController {
  
     var currentSpinesIndex = 0
-    var ePubIndex = 2
+    var ePubIndex = 1
     
     let xPos = 20
     var width = 0
     var height = 0
     
-    var numberOfSpines = 0
     var pageNumber = 0
     var allPages = 0
     
@@ -98,11 +97,10 @@ class TextImageViewController: UIViewController {
         
         let book = subject.book
         //print("bood name ==== \(book.title())")
+         
+        let spines = book.spine.spineReferences.forEach { spine in
         
-        let spines = book.spine.spineReferences
-        numberOfSpines = spines.count
-        
-        let resource = spines[currentSpinesIndex].resource
+        let resource = spine.resource
         let opfData = try? NSData(contentsOfFile: resource.fullHref, options: .DataReadingMappedAlways)
         let xmlDoc = try? AEXMLDocument(xmlData: opfData!)
        
@@ -120,6 +118,22 @@ class TextImageViewController: UIViewController {
         else { return }
         
         func classify(element: AEXMLElement) -> [ElementType] {
+            
+//            var resultElement : [ElementType] = []
+//            if let textContent = element.value {
+//                resultElement = [.text(textContent)]
+//            } 
+            
+            func parseElementWithContentAndChildren(document: AEXMLDocument) -> String {
+                let rootChildrenValues = document.root.children.map { $0.name + " " + $0.stringValue }
+                let rootValue = document.root.name + " " + document.root.stringValue
+                print("rootValue:", rootValue)
+                print("rootChildrenValues:", rootChildrenValues)
+                let retVal = [rootValue] + rootChildrenValues
+                
+                return retVal.joinWithSeparator("")
+            }
+            
             switch (element.children.count, element.name) {
             case (0, _):
                 if let href = element.attributes["src"] where element.name == "img" {
@@ -132,7 +146,8 @@ class TextImageViewController: UIViewController {
                 } else {
                     return []//[.empty]
                 }
-            case (_, "table"):
+            case (_, "p"), (_, "table"):
+                
                 return [.pagebreak] + element.children.flatMap(classify)
             case _:
                 return element.children.flatMap(classify)
@@ -147,7 +162,7 @@ class TextImageViewController: UIViewController {
             case ElementType.pagebreak: return true
             default: return false } 
         }.map { $0.flatMap { $0 } }
-       // pages.forEach{ print($0) }
+        //pages.forEach{ print($0) }
         //print("pages ======== \(pages.count)") 
         
      
@@ -203,6 +218,8 @@ class TextImageViewController: UIViewController {
         textView.font = textView.font?.fontWithSize(12)
         img.image = UIImage(contentsOfFile: storyPage.image) // SetImage(cover)
         topText.text = "TITLE : \(title) by \(author)" 
+            
+        }
         
     }
     
