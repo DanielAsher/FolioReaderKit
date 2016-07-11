@@ -8,9 +8,12 @@
 import Foundation
 import UIKit
 import SpriteKit
+@testable import FolioReaderKit
+
 
 extension String {
 
+   
     
 }
 
