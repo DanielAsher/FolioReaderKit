@@ -20,7 +20,11 @@ struct StoryPages {
 
 class FolioReaderTests: QuickSpec {
     
-    
+    var ePubsCollection : [String] = [
+        "The Tale of Johnny Town-Mouse",
+        "The Tailor of Gloucester",
+        "The Tale of Peter Rabbit - Beatrix Potter",
+        ]
    
     func nilString(str: String?) -> String?
     {
@@ -65,17 +69,20 @@ class FolioReaderTests: QuickSpec {
             var subject: FREpubParser!
 
             beforeEach {
-                let path = NSBundle(forClass: self.dynamicType).pathForResource("The Tale of Peter Rabbit - Beatrix Potter", ofType: "epub")!
+                let path = NSBundle(forClass: self.dynamicType).pathForResource(self.ePubsCollection[2], ofType: "epub")!
                 subject = FREpubParser()
                 subject.readEpub(epubPath: path)
             }
 
             it("correctly parses a properly formatted document") {
+                
                 let book = subject.book
                 //print("bood name ==== \(book.title())")
-                let spines = book.spine.spineReferences
+                
+                let spines = book.spine.spineReferences.forEach { spine in
+                    
                 //print(spines.count)
-                let resource = spines[0].resource             
+                let resource = spine.resource             
                 let opfData = try? NSData(contentsOfFile: resource.fullHref, options: .DataReadingMappedAlways)
                 
                 var xmlDoc : AEXMLDocument?
@@ -98,7 +105,6 @@ class FolioReaderTests: QuickSpec {
                     let head = xmlDoc?.root["head"],
                     let body = xmlDoc?.root["body"],
                     let bodyChildrens = xmlDoc?.root["body"].children.count
-                    //let image = body.children[indexAdd]["img"].attributes["src"]
                     else { return }
                 
                 func classify(element: AEXMLElement) -> [ElementType] {
@@ -128,8 +134,7 @@ class FolioReaderTests: QuickSpec {
                     case ElementType.pagebreak: return true
                     default: return false } 
                     }.map { $0.flatMap { $0 } }
-                
-               // pages.map { print($0)}
+                //pages.map { print($0)}
                // print("pages ======== \(pages.count)") 
                 
                 let imagesRef = pages.map { //print($0)
@@ -147,7 +152,7 @@ class FolioReaderTests: QuickSpec {
                 }.filter { $0.isEmpty == false }
                 //imagesRef.forEach{ print($0.count) }
                 
-                let para = pages.map { 
+                let paragraphs = pages.map { 
                     
                     return $0.filter { (element) -> Bool in
                         
@@ -160,27 +165,56 @@ class FolioReaderTests: QuickSpec {
                     }
                 }.filter { $0.isEmpty == false }
                 //para.forEach { print($0)  }   
-            
-            func GetStoryPage(images images: [[ElementType]], pages: [[ElementType]],  pageNumber: Int) -> StoryPages {
-                 
-                let imageDescription = images[pageNumber].lazy.flatMap { $0 }
-                let pageDescription = pages[pageNumber].lazy.flatMap { $0 } 
                     
-                let page = pageDescription.reduce("") { acc, x in
-                    let res = acc + x.description
+            //print("pages ======== \(pages.count), imagess ===== \(imagesRef.count),   paragraphs ===== \(paragraphs.count)") 
+                    
+                let imageDescription = imagesRef[0].lazy.flatMap { $0 }
+                let pageDescription = paragraphs[0].lazy.flatMap { $0 } 
+                
+                let currentPage = pageDescription.reduce("") { acc, x in
+                    let res = acc + " " + x.description
                     return res
                 }
+                    
                 
-                guard 
-                    let image = imageDescription.first?.description
-                else { return StoryPages() }
-                
-                
-                return StoryPages(image: resource.basePath() + "/" + image, paragraph: page) 
-            }
+            XCTAssertNil(cover, "is there a cover")//check if there is a cover
+                    
+            XCTAssertEqual(title,  "The Tale of Peter Rabbit - Beatrix Potter")// check if the title is
+                    
+            XCTAssertLessThan(pages.count, 30) // check that the number of pages is less than
+            XCTAssertEqual(pages.count, 29) // check if the number of pages is less equal to
+              
             
-            print("This is a Page   =======   \(GetStoryPage(images: imagesRef, pages: para,pageNumber: 0))")
+            XCTAssert(author, "is there a an author")//check if there is a author name
+            XCTAssertEqual(author,  "Me") // check the author name
            
+                    
+                    
+                    
+//            func GetStoryPage(images images: [[ElementType]], pages: [[ElementType]],  pageNumber: Int) -> StoryPages {
+//                 
+//                let imageDescription = images[pageNumber].lazy.flatMap { $0 }
+//                let pageDescription = pages[pageNumber].lazy.flatMap { $0 } 
+//                    
+//                let page = pageDescription.reduce("") { acc, x in
+//                    let res = acc + x.description
+//                    return res
+//                }
+//                
+//                guard 
+//                    let image = imageDescription.first?.description
+//                else { return StoryPages() }
+//                
+//                
+//                return StoryPages(image: resource.basePath() + "/" + image, paragraph: page) 
+//            }
+//            
+//            print("This is a Page   =======   \(GetStoryPage(images: imagesRef, pages: paragraphs,pageNumber: 0))")
+//           
+                
+                
+            }
+                
                 // expect(pages.count).to(equal(29))
                // print("pages ======== \(pages.count)") 
                 
