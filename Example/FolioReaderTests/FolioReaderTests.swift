@@ -6,16 +6,12 @@
 //  Copyright © 2016 FolioReader. All rights reserved.
 //
 
+@testable import Example
 @testable import FolioReaderKit
-
 import Quick
 import Nimble
 import AEXML
 
-struct StoryPages {
-    var image: String = ""
-    var paragraph: String = ""
-}
 
 
 class FolioReaderTests: QuickSpec {
@@ -26,42 +22,7 @@ class FolioReaderTests: QuickSpec {
         "The Tale of Peter Rabbit - Beatrix Potter",
         ]
    
-    func nilString(str: String?) -> String?
-    {
-        if str == nil {
-            return String()
-        }else{
-            return str
-        }
-    }
-    
-    func nilFRResourse(res: FRResource?) -> String?
-    {
-        if res == nil {
-            return String()
-            
-        }else{
-            return res?.fullHref
-        }
-    }
-    
-    enum ElementType: CustomStringConvertible {
-        case text(String)
-        case image(String) // typealias Href
-        case firstPageMarker
-        case pagebreak
-        
-        var description: String {
-            switch self {
-            case let .text(str): return "\(str)"
-            case let .image(href) : return "\(href)"
-            case .firstPageMarker: return ""//"firstPage"
-            case .pagebreak: return ""//"pagebreak: "
-                
-            }
-        }
-    }
-    
+   
     
     override func spec() {
         
@@ -73,76 +34,55 @@ class FolioReaderTests: QuickSpec {
                 subject = FREpubParser()
                 subject.readEpub(epubPath: path)
             }
-
+        
+        
             it("correctly parses a properly formatted document") {
                 
                 let book = subject.book
-                //print("bood name ==== \(book.title())")
                 
-                let spines = book.spine.spineReferences.forEach { spine in
+                let xmlDocs = book.spine.spineReferences.flatMap { spine -> AEXMLDocument? in
                     
-                //print(spines.count)
-                let resource = spine.resource             
-                let opfData = try? NSData(contentsOfFile: resource.fullHref, options: .DataReadingMappedAlways)
-                
-                var xmlDoc : AEXMLDocument?
-                
-                do {
-                    xmlDoc = try AEXMLDocument(xmlData: opfData!)
+                    //print(spines.count)
+                    let resource = spine.resource             
+                    let opfData = try? NSData(contentsOfFile: resource.fullHref, options: .DataReadingMappedAlways)
                     
-                } catch{
-                    XCTAssert(false, "xml parsing exception")
-                }
-                
-                
-                let htmRef = resource.href
-                guard 
-                    let cover = self.nilFRResourse(book.coverImage),
-                    let title = book.metadata.titles.first,
-                    let author = self.nilString(book.metadata.creators.first?.name),
-                    let headCount = xmlDoc?.root["head"].all?.count,
-                    let bodyCount = xmlDoc?.root["body"].all?.count,
-                    let head = xmlDoc?.root["head"],
-                    let body = xmlDoc?.root["body"],
-                    let bodyChildrens = xmlDoc?.root["body"].children.count
-                    else { return }
-                
-                func classify(element: AEXMLElement) -> [ElementType] {
-                    switch (element.children.count, element.name) {
-                    case (0, _):
-                        if let href = element.attributes["src"] where element.name == "img" {
-                            return [.image(href)]
-                        } else if element.name == "hr" {
-                            return [.pagebreak]
-                        }
-                        else if let textContent = element.value {
-                            return [.text(textContent)]
-                        } else {
-                            return []//[.empty]
-                        }
-                    case (_, "table"):
-                        return [.pagebreak] + element.children.flatMap(classify)
-                    case _:
-                        return element.children.flatMap(classify)
+                    var xmlDoc : AEXMLDocument?
+                    
+                    do {
+                        xmlDoc = try AEXMLDocument(xmlData: opfData!)
+                        
+                    } catch{
+                        XCTAssert(false, "xml parsing exception")
                     }
+                    return xmlDoc
                 }
                 
-                let allResults = classify(body)
-                //allResults.forEach { print($0) }
+                
+                xmlDocs.forEach { xmlDoc in 
+                    guard 
+                        let cover = nilFRResourse(book.coverImage),
+                        let title = book.metadata.titles.first,
+                        let author = nilString(book.metadata.creators.first?.name)
+                       else { return }
+                    
+                    let head = xmlDoc.root["head"]
+                    let body = xmlDoc.root["body"]
+                   
+                    
+                let allResults = body.classify()
+               
                 let pages = allResults.split { 
                     switch $0 { 
                     case ElementType.pagebreak: return true
                     default: return false } 
                     }.map { $0.flatMap { $0 } }
-                //pages.map { print($0)}
-               // print("pages ======== \(pages.count)") 
                 
-                let imagesRef = pages.map { //print($0)
+                var imagesRef = pages.map { //print($0)
                     
                     return $0.filter { (element) -> Bool in
                         
                         switch element { 
-                        case let .image(img): //ElementType.image:
+                        case .image(_): //ElementType.image:
                             return true
                         default: 
                             return false
@@ -150,98 +90,61 @@ class FolioReaderTests: QuickSpec {
                     }
                     
                 }.filter { $0.isEmpty == false }
-                //imagesRef.forEach{ print($0.count) }
+                imagesRef.insert([ElementType.image("newImage")], atIndex: 1)
                 
-                let paragraphs = pages.map { 
+                var paragraphs = pages.dropFirst(2).map { 
                     
                     return $0.filter { (element) -> Bool in
                         
                         switch element { 
-                        case let .text(tex): //ElementType.text(test):
+                        case .text(_): //ElementType.text(test):
                             return true
                         default: 
                             return false
                         } 
                     }
                 }.filter { $0.isEmpty == false }
-                //para.forEach { print($0)  }   
+                paragraphs.insert([ElementType.text("\(title) by \(author)")], atIndex: 0)
                     
-            //print("pages ======== \(pages.count), imagess ===== \(imagesRef.count),   paragraphs ===== \(paragraphs.count)") 
                     
-                let imageDescription = imagesRef[0].lazy.flatMap { $0 }
-                let pageDescription = paragraphs[0].lazy.flatMap { $0 } 
+                print("pages ======== \(pages.count), imagess ===== \(imagesRef.count),   paragraphs ===== \(paragraphs.count)") 
+
+                let firstPage = paragraphs[1].lazy.flatMap { $0 }.reduce("") { acc, x in
+                    let res = acc + " " + x.description
+                    return res
+                }
                 
-                let currentPage = pageDescription.reduce("") { acc, x in
+                let lastPage = paragraphs[27].lazy.flatMap { $0 }.reduce("") { acc, x in
                     let res = acc + " " + x.description
                     return res
                 }
                     
-                
-            XCTAssertNil(cover, "is there a cover")//check if there is a cover
+                XCTAssertEqual(book.coverImage.href, "@public@vhost@g@gutenberg@html@files@14838@14838-h@images@peter02.gif")//test pass:
+                XCTAssertEqual(cover, "is there a cover")//test fail: check if there is a cover
                     
-            XCTAssertEqual(title,  "The Tale of Peter Rabbit - Beatrix Potter")// check if the title is
+                XCTAssertEqual(title,  "The Tale of Peter Rabbit - Beatrix Potter")// check if the title is
+                
+                XCTAssertEqual(author, "is there a an author")//test fail: check if there is a author name
+                XCTAssertEqual(author,  "Beatrix Potter") //test pass: check the author name
                     
-            XCTAssertLessThan(pages.count, 30) // check that the number of pages is less than
-            XCTAssertEqual(pages.count, 29) // check if the number of pages is less equal to
-              
-            
-            XCTAssert(author, "is there a an author")//check if there is a author name
-            XCTAssertEqual(author,  "Me") // check the author name
-           
+                XCTAssertLessThan(pages.count, 30) // check that the number of pages is less than
+                XCTAssertEqual(pages.count, 29) // check if the number of pages is less equal to
+  
+                XCTAssertEqual(pages.count, 29) // check if the number of pages is less equal to
+                
+                XCTAssertEqual(imagesRef.count, 28) // check if the number of pages is less equal to
+                XCTAssertEqual(paragraphs.count, 28) // check if the number of pages is less equal to
+                
+                XCTAssertEqual(paragraphs.count, imagesRef.count) // check if the number of pages is less equal to
+                
+                
+                XCTAssertEqual(firstPage, " Hello george")
+                XCTAssertEqual(firstPage, " Once upon a time there were four little Rabbits, and their names were— Flopsy, Mopsy, Cotton-tail,") //test pass:
+                    
+                XCTAssertEqual(lastPage, " But Flopsy, Mopsy, and Cotton-tail had bread and milk and blackberries for supper. THE END")// test pass:
                     
                     
-                    
-//            func GetStoryPage(images images: [[ElementType]], pages: [[ElementType]],  pageNumber: Int) -> StoryPages {
-//                 
-//                let imageDescription = images[pageNumber].lazy.flatMap { $0 }
-//                let pageDescription = pages[pageNumber].lazy.flatMap { $0 } 
-//                    
-//                let page = pageDescription.reduce("") { acc, x in
-//                    let res = acc + x.description
-//                    return res
-//                }
-//                
-//                guard 
-//                    let image = imageDescription.first?.description
-//                else { return StoryPages() }
-//                
-//                
-//                return StoryPages(image: resource.basePath() + "/" + image, paragraph: page) 
-//            }
-//            
-//            print("This is a Page   =======   \(GetStoryPage(images: imagesRef, pages: paragraphs,pageNumber: 0))")
-//           
-                
-                
-            }
-                
-                // expect(pages.count).to(equal(29))
-               // print("pages ======== \(pages.count)") 
-                
-            
-                
-
-            //      //let storyBook = getStoryBookFromXML(book: subject.book, xmlDoc: xmlDoc) // Replace this with a generated version from xml.
-//                let firstWord = pages.first?.paragraph.componentsSeparatedByString(" ").first
-                
- 
-  ////          let firstWordOnLastPage = pages.last?.componentsSeparatedByString(" ").first
-  ////          expect(firstWordOnLastPage).to(equal("BUT"))
-
-                
-//                expect(firstWord).to(equal("ONCE"))
-//                
-//                expect(storyBook.pages.count).to(equal(23))
-                
-   
-                
-//                expect(storyBook.title).to(equal("The Tale of Peter Rabbit"))
-                
-//                expect(storyBook.pages.count).to(equal(20))
-
-//                expect(subject.book.tableOfContents.count).to(equal(2))
-                
-         
+                }
             }
         
             it("finds primary html resource") {
@@ -311,5 +214,61 @@ class FolioReaderTests: QuickSpec {
         //                    //return StoryBook()
         //                    return StoryBook(cover: cover, title: title, author: author, pages: [storyPage])
 //}
+
+
+
+
+
+
+//            func GetStoryPage(images images: [[ElementType]], pages: [[ElementType]],  pageNumber: Int) -> StoryPages {
+//                 
+//                let imageDescription = images[pageNumber].lazy.flatMap { $0 }
+//                let pageDescription = pages[pageNumber].lazy.flatMap { $0 } 
+//                    
+//                let page = pageDescription.reduce("") { acc, x in
+//                    let res = acc + x.description
+//                    return res
+//                }
+//                
+//                guard 
+//                    let image = imageDescription.first?.description
+//                else { return StoryPages() }
+//                
+//                
+//                return StoryPages(image: resource.basePath() + "/" + image, paragraph: page) 
+//            }
+//            
+//            print("This is a Page   =======   \(GetStoryPage(images: imagesRef, pages: paragraphs,pageNumber: 0))")
+//           
+
+
+//            }
+
+// expect(pages.count).to(equal(29))
+// print("pages ======== \(pages.count)") 
+
+
+
+
+//      //let storyBook = getStoryBookFromXML(book: subject.book, xmlDoc: xmlDoc) // Replace this with a generated version from xml.
+//                let firstWord = pages.first?.paragraph.componentsSeparatedByString(" ").first
+
+
+////          let firstWordOnLastPage = pages.last?.componentsSeparatedByString(" ").first
+////          expect(firstWordOnLastPage).to(equal("BUT"))
+
+
+//                expect(firstWord).to(equal("ONCE"))
+//                
+//                expect(storyBook.pages.count).to(equal(23))
+
+
+
+//                expect(storyBook.title).to(equal("The Tale of Peter Rabbit"))
+
+//                expect(storyBook.pages.count).to(equal(20))
+
+//                expect(subject.book.tableOfContents.count).to(equal(2))
+
 
 
