@@ -37,6 +37,14 @@
                BlueprintName = "FolioReaderTests"
                ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "FolioReaderTests">
+               </Test>
+               <Test
+                  Identifier = "SharingProviderTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

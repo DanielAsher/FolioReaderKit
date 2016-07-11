@@ -27,6 +27,7 @@
 		C792C8D11D266CE300C636DD /* UIKit+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D01D266CE300C636DD /* UIKit+Ext.swift */; };
 		C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D21D266D0E00C636DD /* Math+Ext.swift */; };
 		C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D51D26AB1300C636DD /* WordsModel.swift */; };
+		C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */; };
 		C7D396AB1D26B7A600F18529 /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
 		C7D396AC1D26B7AB00F18529 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
 		C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */; };
@@ -75,6 +76,7 @@
 		C792C8D21D266D0E00C636DD /* Math+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Math+Ext.swift"; sourceTree = "<group>"; };
 		C792C8D41D268C3400C636DD /* Swift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift.playground; sourceTree = "<group>"; };
 		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
+		C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOMParserTests.swift; sourceTree = "<group>"; };
 		C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
 		CA10C1311C572A4B0049165D /* FolioReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10C1331C572A4B0049165D /* FolioReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderTests.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				CAF233281C57E1F400CB930C /* SharingProviderTests.swift */,
 				CA10C1351C572A4B0049165D /* Info.plist */,
 				C792C8BC1D240A3700C636DD /* Xml.swift */,
+				C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */,
 			);
 			path = FolioReaderTests;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */,
 				C7D396B01D27BF9200F18529 /* StoryPage.swift in Sources */,
 				CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */,
+				C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */,
 				C7D396AF1D27BF8B00F18529 /* StoryBook.swift in Sources */,
 				C792C8BD1D240A3700C636DD /* Xml.swift in Sources */,
 			);
