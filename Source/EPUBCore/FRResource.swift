@@ -17,7 +17,7 @@ public class FRResource: NSObject {
     public var mediaOverlay: String!
     public var inputEncoding: String!
 
-    func basePath() -> String! {
+    public func basePath() -> String! {
         if href == nil || href.isEmpty { return nil }
         var paths = fullHref.componentsSeparatedByString("/")
         paths.removeLast()

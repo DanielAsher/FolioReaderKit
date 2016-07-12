@@ -25,7 +25,7 @@ public class FREpubParser: NSObject, SSZipArchiveDelegate {
      Parse the Cover Image from an epub file.
      Returns an UIImage.
      */
-    func parseCoverImage(epubPath: String)-> UIImage? {
+    public func parseCoverImage(epubPath: String)-> UIImage? {
 
         let book = readEpub(epubPath: epubPath, removeEpub: false)
         
@@ -41,7 +41,7 @@ public class FREpubParser: NSObject, SSZipArchiveDelegate {
     Unzip, delete and read an epub file.
     Returns a FRBook.
     */
-    func readEpub(epubPath withEpubPath: String, removeEpub: Bool = true) -> FRBook {
+    public func readEpub(epubPath withEpubPath: String, removeEpub: Bool = true) -> FRBook {
         epubPathToRemove = withEpubPath
         shouldRemoveEpub = removeEpub
         
@@ -64,7 +64,7 @@ public class FREpubParser: NSObject, SSZipArchiveDelegate {
     Read an unziped epub file.
     Returns a FRBook.
     */
-    func readEpub(filePath withFilePath: String) -> FRBook {
+    public func readEpub(filePath withFilePath: String) -> FRBook {
         bookBasePath = withFilePath
         kBookId = (withFilePath as NSString).lastPathComponent
         readContainer()
