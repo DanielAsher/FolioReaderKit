@@ -27,106 +27,10 @@ class FolioReaderTests: QuickSpec {
     override func spec() {
         
         describe("epub parsing") {
-            var subject: FREpubParser!
-            var currentPath : String = "" 
-            beforeEach {
-                currentPath = NSBundle(forClass: self.dynamicType).pathForResource(self.ePubsCollection[2], ofType: "epub")!
-                subject = FREpubParser()
-                subject.readEpub(epubPath: currentPath)
-            }
-        
-        
+            
             it("correctly parses BP - The Tale of Peter Rabbit") 
             {
                 
-                let book = subject.book
-                
-                let xmlDocs = book.spine.spineReferences.flatMap { spine -> AEXMLDocument? in
-                    
-                    //print(spines.count)
-                    let resource = spine.resource             
-                    let opfData = try? NSData(contentsOfFile: resource.fullHref, options: .DataReadingMappedAlways)
-                    
-                    var xmlDoc : AEXMLDocument?
-                    
-                    do {
-                        xmlDoc = try AEXMLDocument(xmlData: opfData!)
-                        
-                    } catch{
-                        XCTAssert(false, "xml parsing exception")
-                    }
-                    return xmlDoc
-                }
-                
-                
-                xmlDocs.forEach { xmlDoc in 
-                    
-                    let language = book.metadata.language
-                    let publisher = book.metadata.publishers.joinWithSeparator(" ")
-                    let authorNames = book.metadata.creators.flatMap { $0.name }
-                    let author = authorNames.joinWithSeparator(" ")
-                    let cover = book.coverImage?.fullHref ?? ""
-                    guard 
-                        let title = book.metadata.titles.first,
-                        let date = book.metadata.dates.first?.date
-                        
-                       else { return }
-                    
-                    let head = xmlDoc.root["head"]
-                    let body = xmlDoc.root["body"]
-                   
-                    //print(language,publisher, author,title,date, cover)
-                
-                    
-                let allResults = body.classify()
-               
-                let pages = allResults.split { 
-                    switch $0 { 
-                    case ElementType.pagebreak: return true
-                    default: return false } 
-                    }.map { $0.flatMap { $0 } }
-                
-                var imagesRef = pages.map { //print($0)
-                    
-                    return $0.filter { (element) -> Bool in
-                        
-                        switch element { 
-                        case .image(_): //ElementType.image:
-                            return true
-                        default: 
-                            return false
-                        } 
-                    }
-                    
-                }.filter { $0.isEmpty == false }
-                imagesRef.insert([ElementType.image("newImage")], atIndex: 1)
-                
-                var paragraphs = pages.dropFirst(2).map { 
-                    
-                    return $0.filter { (element) -> Bool in
-                        
-                        switch element { 
-                        case .text(_): //ElementType.text(test):
-                            return true
-                        default: 
-                            return false
-                        } 
-                    }
-                }.filter { $0.isEmpty == false }
-                paragraphs.insert([ElementType.text("\(title) by \(author)")], atIndex: 0)
-                    
-                    
-                print("pages ======== \(pages.count), imagess ===== \(imagesRef.count),   paragraphs ===== \(paragraphs.count)") 
-
-                let firstPage = paragraphs[1].lazy.flatMap { $0 }.reduce("") { acc, x in
-                    let res = acc + " " + x.description
-                    return res
-                }
-                
-                let lastPage = paragraphs[27].lazy.flatMap { $0 }.reduce("") { acc, x in
-                    let res = acc + " " + x.description
-                    return res
-                }
                     
 //                XCTAssertEqual(book.coverImage.href, "@public@vhost@g@gutenberg@html@files@14838@14838-h@images@peter02.gif")//test pass:
 //                XCTAssertEqual(cover, "is there a cover")//test fail: check if there is a cover
@@ -153,21 +57,33 @@ class FolioReaderTests: QuickSpec {
 //                XCTAssertEqual(lastPage, " But Flopsy, Mopsy, and Cotton-tail had bread and milk and blackberries for supper. THE END")// test pass:
 //                    
                     
-                }
+             //   }
             }
         
             //fit is a focus test 
             fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Peter Rabbit'") {
+                
                 let epubStoryReader = EpubStoryReader()
-                let epubURL = NSURL(fileURLWithPath: currentPath)
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[2], withExtension: "epub")!
+                                
                 do {
+                    
                     let storyBook = try epubStoryReader.read(epubURL) 
-                    print(storyBook)
+//                    print(storyBook)
+//                    XCTAssertEqual(storyBook.info.cover, "@public@vhost@g@gutenberg@html@files@14838@14838-h@images@peter02.gif")//test fail: check if there is a cover
+//                        
+//                    XCTAssertEqual(title,  "The Tale of Peter Rabbit - Beatrix Potter")// check if the title is
+//                    
+//                    XCTAssertEqual(author, "is there a an author")//test fail: check if there is a author name
+//                    XCTAssertEqual(author,  "Beatrix Potter") //test pass: check the author name
+//                    expect(storyBook.pages.count) == 29
                 }
                 catch let err {
                     XCTAssert(false, "\(err)")
+                    
                     print(err)
                 }
+                
             }
             
             it("finds primary html resource") {
