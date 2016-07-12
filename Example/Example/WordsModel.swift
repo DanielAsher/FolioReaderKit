@@ -14,7 +14,11 @@ import SpriteKit
 extension String {
 
    
-    
+    func reduceToString(text:[String], seperator: String) -> String {
+        return text.flatMap{ $0 }.reduce( "" ) { acc, string in
+            return acc + seperator + string
+        }
+    }
 }
 
 extension SequenceType where Generator.Element == String {
