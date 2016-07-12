@@ -27,52 +27,66 @@ class EpubStoryReader : EpubStoryReading {
     }
     
     func read(path: NSURL) throws -> StoryBook {
-
-        let subject: FREpubParser = FREpubParser()
         
-        let book = subject.book
+        let parser = FREpubParser()
+        
+        parser.readEpub(epubPath: path.path!)
+        let book = parser.book
         let xmlDocs = xmlDocuments(book)
-        var storyBookInfo = StoryBookInfo()
-        var storyPage : [StoryPage] = []
-        var storyBook = StoryBook()
 
-        xmlDocs.forEach { xmlDoc in 
+        let cover = book.coverImage?.fullHref ?? ""
+        let authorNames = book.metadata.creators.flatMap { $0.name }
+        let author = authorNames.joinWithSeparator(", ")
+        let language = book.metadata.language.capitalizedString
+        let publisher = book.metadata.publishers.joinWithSeparator(" ")
+        let date = book.metadata.dates.first?.date ?? ""
+        let title = book.metadata.titles.first ?? ""
+        
+        print("cover ===== \(cover)")
+        print("language ===== \(language)")
+        print("title ===== \(title)")
+        print("author ===== \(author)")
+        
+        let storyBookInfo = StoryBookInfo(cover: cover, title: title, authors: author, language: language, date: date, publisher: publisher)
+        
+        let storyPages = xmlDocs.flatMap { xmlDoc -> [StoryPage] in
 
-            let cover = book.coverImage?.fullHref ?? ""
-            let authorNames = book.metadata.creators.flatMap { $0.name }
-            let author = authorNames.joinWithSeparator(", ")
-            let language = book.metadata.language.capitalizedString
-            let publisher = book.metadata.publishers.joinWithSeparator(" ")
-            
-            guard 
-                let title = book.metadata.titles.first,
-                let date = book.metadata.dates.first?.date
-                
-                else { return }
-            
-            
             //let head = xmlDoc.root["head"]
-            //let body = xmlDoc.root["body"]
-            
-            //print(cover, title, author)
-            storyBookInfo = StoryBookInfo(cover: cover, title: title, authors: author, language: language, date: date, publisher: publisher)
-            
-     
-//        let imageDescription = images[pageNumber].lazy.flatMap { $0 }
-//        let pageDescription = paragraphs[pageNumber].lazy.flatMap { $0 } 
-//            
-//        let page = pageDescription.reduce("") { acc, x in
-//                let res = acc + " " + x.description
-//                return res
-//        }
-//        guard let image = imageDescription.first?.description else { return }
-          //  storyPage = StoryPage(image: resource.basePath() + "/" + image, paragraph: page)
+            let body = xmlDoc.root["body"]
            
-            storyBook = StoryBook(info: storyBookInfo, pages: storyPage)
+            let allResults = body.classify()
+            
+            let pagesFound = allResults.split { 
+                switch $0 { 
+                case ElementType.pagebreak: return true
+                default: return false } 
+            }.map { $0.flatMap { $0 } }
+            
+            
+            let pages = pagesFound.map { arrayOfElementTypes -> StoryPage in 
+                
+                let firstImg = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
+                let allText =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
+               
+                print("firstImgage ===== \(firstImg)")
+                print("allText ===== \(allText)")
+                
+                let storyPage = StoryPage(image: firstImg, paragraph: allText)
+                
+                return storyPage
+                
+            }
+
+            return pages
+            
         }
         
-        throw EpubStoryReadingError.FileNotFound
+        let storyBook = StoryBook(info: storyBookInfo, pages: storyPages)
+        
         return storyBook
     }
+    
+    
+    
 }
 

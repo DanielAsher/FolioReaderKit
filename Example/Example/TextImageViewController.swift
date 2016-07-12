@@ -27,7 +27,7 @@ class TextImageViewController: UIViewController {
 //    var img = UIImageView()
 //    var textView = UITextView()
   
-//    public var subject: FREpubParser!
+    var subject: FREpubParser!
 //    public var resource: FRResource!
 //   
 //    public var ePubsCollection : [String] = [
@@ -42,6 +42,8 @@ class TextImageViewController: UIViewController {
     {
         
         super.viewDidLoad()
+        
+        
 //        self.view.backgroundColor = UIColor.randomColor()
 //        width = Int(self.view.frame.size.width) - 50
 //        height = Int(self.view.frame.size.width/1.5)
