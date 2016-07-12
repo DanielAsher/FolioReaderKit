@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct StoryBookInfo {
+    var cover: String = ""
+    var title: String = ""
+    var authors: String = ""
+    var language: String = ""
+    var date: String = ""
+    var publisher: String = ""
+}
