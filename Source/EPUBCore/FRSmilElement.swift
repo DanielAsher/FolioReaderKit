@@ -12,10 +12,10 @@ import UIKit
 // http://www.idpf.org/accessibility/guidelines/content/overlays/overview.php#mo005-samp
 
 
-class FRSmilElement: NSObject {
-    var name: String // the name of the tag: <seq>, <par>, <text>, <audio>
-    var attributes: [String: String]!
-    var children: [FRSmilElement]
+public class FRSmilElement: NSObject {
+    public var name: String // the name of the tag: <seq>, <par>, <text>, <audio>
+    public var attributes: [String: String]!
+    public var children: [FRSmilElement]
 
     init(name: String, attributes: [String:String]!) {
         self.name = name

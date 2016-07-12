@@ -14,10 +14,10 @@ import ZipArchive
 #endif
 import AEXML
 
-class FREpubParser: NSObject, SSZipArchiveDelegate {
-    let book = FRBook()
-    var bookBasePath: String!
-    var resourcesBasePath: String!
+public class FREpubParser: NSObject, SSZipArchiveDelegate {
+    public let book = FRBook()
+    public var bookBasePath: String!
+    public var resourcesBasePath: String!
     var shouldRemoveEpub = true
     private var epubPathToRemove: String?
     
@@ -341,7 +341,7 @@ class FREpubParser: NSObject, SSZipArchiveDelegate {
     
     // MARK: - SSZipArchive delegate
     
-    func zipArchiveWillUnzipArchiveAtPath(path: String!, zipInfo: unz_global_info) {
+    public func zipArchiveWillUnzipArchiveAtPath(path: String!, zipInfo: unz_global_info) {
         if shouldRemoveEpub {
             do {
                 try NSFileManager.defaultManager().removeItemAtPath(epubPathToRemove!)

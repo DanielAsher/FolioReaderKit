@@ -8,14 +8,14 @@
 
 import UIKit
 
-class FRResource: NSObject {
-    var id: String!
-    var title: String!
-    var href: String!
-    var fullHref: String!
-    var mediaType: MediaType!
-    var mediaOverlay: String!
-    var inputEncoding: String!
+public class FRResource: NSObject {
+    public var id: String!
+    public var title: String!
+    public var href: String!
+    public var fullHref: String!
+    public var mediaType: MediaType!
+    public var mediaOverlay: String!
+    public var inputEncoding: String!
 
     func basePath() -> String! {
         if href == nil || href.isEmpty { return nil }

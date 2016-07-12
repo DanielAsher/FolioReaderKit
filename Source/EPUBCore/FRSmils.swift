@@ -9,9 +9,9 @@
 
 import UIKit
 
-struct FRSmilFile {
-    var resource: FRResource
-    var data = [FRSmilElement]()
+public struct FRSmilFile {
+    public var resource: FRResource
+    public var data = [FRSmilElement]()
     
     init(resource: FRResource){
         self.resource = resource;
@@ -106,9 +106,9 @@ struct FRSmilFile {
 /**
  Holds array of `FRSmilFile`
 */
-class FRSmils: NSObject {
-    var basePath: String!
-    var smils = [String: FRSmilFile]()
+public class FRSmils: NSObject {
+    public var basePath: String!
+    public var smils = [String: FRSmilFile]()
     
     /**
      Adds a smil to the smils.

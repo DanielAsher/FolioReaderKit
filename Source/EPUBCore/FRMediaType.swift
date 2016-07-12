@@ -13,10 +13,10 @@ MediaType is used to tell the type of content a resource is.
 
 Examples of mediatypes are image/gif, text/css and application/xhtml+xml
 */
-struct MediaType {
-    var name: String
-    var defaultExtension: String!
-    var extensions: [String]!
+public struct MediaType {
+    public var name: String
+    public var defaultExtension: String!
+    public var extensions: [String]!
     
     init(name: String, defaultExtension: String) {
         self.name = name
@@ -38,7 +38,7 @@ extension MediaType: Equatable {}
 /**
 Compare if two mediatypes are equal or different.
 */
-func ==(lhs: MediaType, rhs: MediaType) -> Bool {
+public func ==(lhs: MediaType, rhs: MediaType) -> Bool {
     return lhs.name == rhs.name && lhs.defaultExtension == rhs.defaultExtension
 }
 

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class FRResources: NSObject {
-    var resources = [String: FRResource]()
+public class FRResources: NSObject {
+    public var resources = [String: FRResource]()
     
     /**
     Adds a resource to the resources.

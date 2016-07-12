@@ -11,10 +11,10 @@ import UIKit
 /**
 Represents one of the authors of the book.
 */
-struct Author {
-    var name: String!
-    var role: String!
-    var fileAs: String!
+public struct Author {
+    public var name: String!
+    public var role: String!
+    public var fileAs: String!
     
     init(name: String, role: String, fileAs: String) {
         self.name = name
@@ -26,9 +26,9 @@ struct Author {
 /**
 A Book's identifier.
 */
-struct Identifier {
-    var scheme: String!
-    var value: String!
+public struct Identifier {
+    public var scheme: String!
+    public var value: String!
     
     init(scheme: String, value: String) {
         self.scheme = scheme
@@ -39,9 +39,9 @@ struct Identifier {
 /**
 A date and his event.
 */
-struct Date {
-    var date: String!
-    var event: String!
+public struct Date {
+    public var date: String!
+    public var event: String!
     
     init(date: String, event: String!) {
         self.date = date
@@ -52,13 +52,13 @@ struct Date {
 /**
 A metadata tag data.
 */
-struct Meta {
-    var name: String?
-    var content: String?
-    var id: String?
-    var property: String?
-    var value: String?
-    var refines: String?
+public struct Meta {
+    public var name: String?
+    public var content: String?
+    public var id: String?
+    public var property: String?
+    public var value: String?
+    public var refines: String?
     
     init(name: String, content: String) {
         self.name = name
@@ -81,19 +81,19 @@ struct Meta {
 /**
 Manages book metadata.
 */
-class FRMetadata: NSObject {
-    var creators = [Author]()
-    var contributors = [Author]()
-    var dates = [Date]()
-    var language = "en"
-    var titles = [String]()
-    var identifiers = [Identifier]()
-    var subjects = [String]()
-    var descriptions = [String]()
-    var publishers = [String]()
-    var format = FRMediaType.EPUB.name
-    var rights = [String]()
-    var metaAttributes = [Meta]()
+public class FRMetadata: NSObject {
+    public var creators = [Author]()
+    public var contributors = [Author]()
+    public var dates = [Date]()
+    public var language = "en"
+    public var titles = [String]()
+    public var identifiers = [Identifier]()
+    public var subjects = [String]()
+    public var descriptions = [String]()
+    public var publishers = [String]()
+    public var format = FRMediaType.EPUB.name
+    public var rights = [String]()
+    public var metaAttributes = [Meta]()
     
     func findMetaByName(name: String) -> String? {
         if name.isEmpty {
