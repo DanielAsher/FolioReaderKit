@@ -29,12 +29,15 @@
 		C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D21D266D0E00C636DD /* Math+Ext.swift */; };
 		C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D51D26AB1300C636DD /* WordsModel.swift */; };
 		C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */; };
-		C7D396AB1D26B7A600F18529 /* StoryBookMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBookMock.swift */; };
-		C7D396AC1D26B7AB00F18529 /* StoryPageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPageMock.swift */; };
+		C7D396AB1D26B7A600F18529 /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
+		C7D396AC1D26B7AB00F18529 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
 		C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */; };
-		C7D396AF1D27BF8B00F18529 /* StoryBookMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBookMock.swift */; };
-		C7D396B01D27BF9200F18529 /* StoryPageMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPageMock.swift */; };
-		C7E84CE11D33F50D00193CF0 /* OptionalNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E84CE01D33F50D00193CF0 /* OptionalNil.swift */; };
+		C7D396AF1D27BF8B00F18529 /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
+		C7D396B01D27BF9200F18529 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
+		C7FCEB791D34F8B100DB33A1 /* EpubStoryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCEB781D34F8B100DB33A1 /* EpubStoryReader.swift */; };
+		C7FCEB7B1D34F8DE00DB33A1 /* EpubStoryReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCEB7A1D34F8DE00DB33A1 /* EpubStoryReading.swift */; };
+		C7FCEB7E1D35042400DB33A1 /* StoryBookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCEB7D1D35042400DB33A1 /* StoryBookInfo.swift */; };
+		C7FCEB7F1D35046200DB33A1 /* StoryBookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FCEB7D1D35042400DB33A1 /* StoryBookInfo.swift */; };
 		CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10C1331C572A4B0049165D /* FolioReaderTests.swift */; };
 		CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF233281C57E1F400CB930C /* SharingProviderTests.swift */; };
 		DB8597912791266AA602B5B1 /* Pods_FolioReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27131F41E20F15F72AAF7176 /* Pods_FolioReaderTests.framework */; };
@@ -68,8 +71,8 @@
 		C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tailor of Gloucester.epub"; sourceTree = "<group>"; };
 		C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Johnny Town-Mouse.epub"; sourceTree = "<group>"; };
 		C777E2361D33D5780099F39B /* ElementType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
-		C792C8B81D23E98900C636DD /* StoryBookMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBookMock.swift; path = ../FolioReaderTests/StoryBookMock.swift; sourceTree = "<group>"; };
-		C792C8BA1D23E99700C636DD /* StoryPageMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPageMock.swift; path = ../FolioReaderTests/StoryPageMock.swift; sourceTree = "<group>"; };
+		C792C8B81D23E98900C636DD /* StoryBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBook.swift; path = ../FolioReaderTests/StoryBook.swift; sourceTree = "<group>"; };
+		C792C8BA1D23E99700C636DD /* StoryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryPage.swift; path = ../FolioReaderTests/StoryPage.swift; sourceTree = "<group>"; };
 		C792C8BC1D240A3700C636DD /* Xml.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xml.swift; sourceTree = "<group>"; };
 		C792C8BE1D240A6900C636DD /* Pattern Matching.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Pattern Matching.playground"; sourceTree = "<group>"; };
 		C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +84,9 @@
 		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOMParserTests.swift; sourceTree = "<group>"; };
 		C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
-		C7E84CE01D33F50D00193CF0 /* OptionalNil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalNil.swift; sourceTree = "<group>"; };
+		C7FCEB781D34F8B100DB33A1 /* EpubStoryReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpubStoryReader.swift; sourceTree = "<group>"; };
+		C7FCEB7A1D34F8DE00DB33A1 /* EpubStoryReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpubStoryReading.swift; sourceTree = "<group>"; };
+		C7FCEB7D1D35042400DB33A1 /* StoryBookInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBookInfo.swift; sourceTree = "<group>"; };
 		CA10C1311C572A4B0049165D /* FolioReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolioReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10C1331C572A4B0049165D /* FolioReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolioReaderTests.swift; sourceTree = "<group>"; };
 		CA10C1351C572A4B0049165D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +139,7 @@
 		1A42C28B1C0E3882000F2137 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C7FCEB771D34F88F00DB33A1 /* Services */,
 				C792C8C91D266B5200C636DD /* TextImageExample */,
 				1A42C28C1C0E3882000F2137 /* AppDelegate.swift */,
 				1A42C28E1C0E3882000F2137 /* ViewController.swift */,
@@ -194,11 +200,21 @@
 			isa = PBXGroup;
 			children = (
 				C792C8D51D26AB1300C636DD /* WordsModel.swift */,
-				C792C8B81D23E98900C636DD /* StoryBookMock.swift */,
-				C792C8BA1D23E99700C636DD /* StoryPageMock.swift */,
+				C792C8B81D23E98900C636DD /* StoryBook.swift */,
+				C792C8BA1D23E99700C636DD /* StoryPage.swift */,
+				C7FCEB7D1D35042400DB33A1 /* StoryBookInfo.swift */,
 				C777E2361D33D5780099F39B /* ElementType.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C7FCEB771D34F88F00DB33A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7FCEB781D34F8B100DB33A1 /* EpubStoryReader.swift */,
+				C7FCEB7A1D34F8DE00DB33A1 /* EpubStoryReading.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		CA10C1321C572A4B0049165D /* FolioReaderTests */ = {
@@ -209,7 +225,6 @@
 				CA10C1351C572A4B0049165D /* Info.plist */,
 				C792C8BC1D240A3700C636DD /* Xml.swift */,
 				C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */,
-				C7E84CE01D33F50D00193CF0 /* OptionalNil.swift */,
 			);
 			path = FolioReaderTests;
 			sourceTree = "<group>";
@@ -471,9 +486,12 @@
 				1A42C28F1C0E3882000F2137 /* ViewController.swift in Sources */,
 				C792C8CF1D266CD400C636DD /* UIImageEffects.swift in Sources */,
 				C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */,
+				C7FCEB791D34F8B100DB33A1 /* EpubStoryReader.swift in Sources */,
 				C792C8D11D266CE300C636DD /* UIKit+Ext.swift in Sources */,
-				C7D396AB1D26B7A600F18529 /* StoryBookMock.swift in Sources */,
-				C7D396AC1D26B7AB00F18529 /* StoryPageMock.swift in Sources */,
+				C7FCEB7E1D35042400DB33A1 /* StoryBookInfo.swift in Sources */,
+				C7FCEB7B1D34F8DE00DB33A1 /* EpubStoryReading.swift in Sources */,
+				C7D396AB1D26B7A600F18529 /* StoryBook.swift in Sources */,
+				C7D396AC1D26B7AB00F18529 /* StoryPage.swift in Sources */,
 				1A42C28D1C0E3882000F2137 /* AppDelegate.swift in Sources */,
 				C777E2391D33DBE00099F39B /* ElementType.swift in Sources */,
 				C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */,
@@ -487,11 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA10C1341C572A4B0049165D /* FolioReaderTests.swift in Sources */,
-				C7D396B01D27BF9200F18529 /* StoryPageMock.swift in Sources */,
-				C7E84CE11D33F50D00193CF0 /* OptionalNil.swift in Sources */,
+				C7D396B01D27BF9200F18529 /* StoryPage.swift in Sources */,
 				CAF233291C57E1F400CB930C /* SharingProviderTests.swift in Sources */,
 				C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */,
-				C7D396AF1D27BF8B00F18529 /* StoryBookMock.swift in Sources */,
+				C7D396AF1D27BF8B00F18529 /* StoryBook.swift in Sources */,
+				C7FCEB7F1D35046200DB33A1 /* StoryBookInfo.swift in Sources */,
 				C792C8BD1D240A3700C636DD /* Xml.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

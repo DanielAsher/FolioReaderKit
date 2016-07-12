@@ -9,8 +9,6 @@
 import Foundation
 
 struct StoryBook {
-    var cover: String = ""
-    var title: String = ""
-    var author: String = ""
+    var info : StoryBookInfo = StoryBookInfo()
     var pages : [StoryPage] = []
 }
