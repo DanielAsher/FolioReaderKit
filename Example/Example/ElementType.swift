@@ -24,6 +24,21 @@ enum ElementType : CustomStringConvertible {
             
         }
     }
+    
+    func getText() -> String? {
+        switch self {
+        case .text(let href): return href
+        default: return nil
+        }
+        
+    }
+    
+    func getImage() -> String? {
+        switch self {
+        case .image(let txt): return txt
+        default: return nil
+        }        
+    }
 }
 
 extension AEXMLElement {
