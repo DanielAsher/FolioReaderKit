@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+enum EpubStoryReadingError : ErrorType {
+    case FileNotFound
+}
+
+protocol EpubStoryReading { 
+    
+    func read(path: NSURL) throws -> StoryBook
+}
