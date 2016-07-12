@@ -4,5 +4,6 @@
         <page name='Dictionary vs Array'/>
         <page name='Subscript func'/>
         <page name='BooleanType'/>
+        <page name='Lazy sequence'/>
     </pages>
 </playground>
