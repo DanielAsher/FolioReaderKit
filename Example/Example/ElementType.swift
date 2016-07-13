@@ -58,26 +58,30 @@ enum ElementType : CustomStringConvertible {
 }
 
 extension AEXMLElement {
-    func classify(type: String) -> [ElementType] {
-        
+    
+    func classify(type: String ) -> [ElementType] {
+
         switch (self.children.count, self.name) {
-        case (0, _):
-            if let href = self.attributes["src"] where self.name == "img" {
-                return [.image(href)]
-            } 
-            else if self.name == "hr" {
-                return [.hrPageMarker]
-            }
-            else if let textContent = self.value {
-                return [.text(textContent)]
-            } else {
-                return []//[.empty]
-            }
-        case (_, type): 
-            return [.pagebreak] + self.children.flatMap { $0.classify(type) }   
-        case _:
-            return self.children.flatMap { $0.classify(type) }
+            
+            case (0, _):
+                if let href = self.attributes["src"] where self.name == "img" {
+                    return [.image(href)]
+                } 
+                else if self.name == "hr" {
+                    return [.hrPageMarker]
+                }
+                else if let textContent = self.value {
+                    return [.text(textContent)]
+                } else {
+                    return []//[.empty]
+                }
+            case (_, type): 
+                return [.pagebreak] + self.children.flatMap { $0.classify( type ) }   
+            case _:
+                return self.children.flatMap { $0.classify( type ) }
         }
+        
+        
     }
 
 }
