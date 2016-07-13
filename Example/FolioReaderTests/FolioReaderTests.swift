@@ -64,19 +64,22 @@ class FolioReaderTests: QuickSpec {
             fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Peter Rabbit'") {
                 
                 let epubStoryReader = EpubStoryReader()
-                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[2], withExtension: "epub")!
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[0], withExtension: "epub")!
                                 
                 do {
                     
                     let storyBook = try epubStoryReader.read(epubURL) 
 //                    print(storyBook)
-//                    XCTAssertEqual(storyBook.info.cover, "@public@vhost@g@gutenberg@html@files@14838@14838-h@images@peter02.gif")//test fail: check if there is a cover
-//                        
-//                    XCTAssertEqual(title,  "The Tale of Peter Rabbit - Beatrix Potter")// check if the title is
+                    
+                    
+                    //XCTAssertEqual(storyBook.info.cover, "@public@vhost@g@gutenberg@html@files@14838@14838-h@images@peter02.gif")//test fail: check if there is a cover
+                       
+//                    XCTAssertEqual(storyBook.info.title,  "The Tale of Peter Rabbit")// test pass: check if the title is
 //                    
-//                    XCTAssertEqual(author, "is there a an author")//test fail: check if there is a author name
-//                    XCTAssertEqual(author,  "Beatrix Potter") //test pass: check the author name
-//                    expect(storyBook.pages.count) == 29
+//                    XCTAssertEqual(storyBook.info.authors, "Beatrix Potter") //test pass: check the author name
+//                    
+//                    XCTAssertEqual(storyBook.pages[0].pageNumber, 0) // test pass: pages number
+//                    expect(storyBook.pages.count) == 27 // test pass: pages amount
                 }
                 catch let err {
                     XCTAssert(false, "\(err)")
