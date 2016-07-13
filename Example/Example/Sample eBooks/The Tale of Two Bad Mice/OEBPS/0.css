@@ -1,0 +1,84 @@
+/**/
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+h1 {
+    text-align: center;
+    /* all headings centered */
+    clear: both
+    }
+p {
+    margin-top: 0.75em;
+    text-align: justify;
+    text-indent: 1.25em;
+    margin-bottom: 0.75em
+    }
+.maintitle {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center
+    }
+.copyright {
+    text-align: center;
+    font-size: 70%
+    }
+.author {
+    font-size: 120%;
+    text-align: center
+    }
+img {
+    border: 0
+    }
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both
+    }
+hr.chap {
+    width: 65%
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+.pagenum {
+    /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    font-size: smaller;
+    text-align: right
+    }
+/* page numbers */
+.center {
+    text-align: center
+    }
+.smcap {
+    font-variant: small-caps
+    }
+/* Images */
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+/*Drop caps*/
+.drop-cap {
+    text-indent: 0;
+    text-align: justify
+    }
+.drop-cap:first-letter {
+    margin: 0.15em 0.1em 0 0;
+    font-size: 250%;
+    line-height: 0.5em
+    }
+@media all {
+    /* was @media handheld */
+    .drop-cap:first-letter {
+        float: none;
+        margin: 0;
+        font-size: 100%
+        }
+    }
+/**/

@@ -29,6 +29,16 @@
 		C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D21D266D0E00C636DD /* Math+Ext.swift */; };
 		C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D51D26AB1300C636DD /* WordsModel.swift */; };
 		C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */; };
+		C7D02C5D1D369DE1008A0738 /* The Story of Miss Moppet.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */; };
+		C7D02C5E1D369DE1008A0738 /* The Tale of Ginger and Pickles.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */; };
+		C7D02C5F1D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */; };
+		C7D02C601D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C591D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub */; };
+		C7D02C611D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C5A1D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub */; };
+		C7D02C641D369DF0008A0738 /* The Story of Miss Moppet.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */; };
+		C7D02C651D369DF0008A0738 /* The Tale of Ginger and Pickles.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */; };
+		C7D02C661D369DF0008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */; };
+		C7D02C671D369DF0008A0738 /* The Tale of Mrs. Tittlemouse.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C591D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub */; };
+		C7D02C681D369DF0008A0738 /* The Tale of the Pie and the Patty Pan.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C5A1D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub */; };
 		C7D396AB1D26B7A600F18529 /* StoryBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8B81D23E98900C636DD /* StoryBook.swift */; };
 		C7D396AC1D26B7AB00F18529 /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8BA1D23E99700C636DD /* StoryPage.swift */; };
 		C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */; };
@@ -83,6 +93,11 @@
 		C792C8D41D268C3400C636DD /* Swift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift.playground; sourceTree = "<group>"; };
 		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOMParserTests.swift; sourceTree = "<group>"; };
+		C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Story of Miss Moppet.epub"; sourceTree = "<group>"; };
+		C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Ginger and Pickles.epub"; sourceTree = "<group>"; };
+		C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Mrs. Tiggy-Winkle.epub"; sourceTree = "<group>"; };
+		C7D02C591D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Mrs. Tittlemouse.epub"; sourceTree = "<group>"; };
+		C7D02C5A1D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of the Pie and the Patty Pan.epub"; sourceTree = "<group>"; };
 		C7D396AD1D26BCDA00F18529 /* UITextView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Ext.swift"; sourceTree = "<group>"; };
 		C7FCEB781D34F8B100DB33A1 /* EpubStoryReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpubStoryReader.swift; sourceTree = "<group>"; };
 		C7FCEB7A1D34F8DE00DB33A1 /* EpubStoryReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpubStoryReading.swift; sourceTree = "<group>"; };
@@ -172,6 +187,11 @@
 		6E5C9B011C4037B7008F6FD9 /* Sample eBooks */ = {
 			isa = PBXGroup;
 			children = (
+				C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */,
+				C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */,
+				C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */,
+				C7D02C591D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub */,
+				C7D02C5A1D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub */,
 				657641A41D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub */,
 				C73F00801D2EBA9500AA7345 /* The Tailor of Gloucester.epub */,
 				C73F00811D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub */,
@@ -336,9 +356,14 @@
 				1A42C2941C0E3883000F2137 /* Assets.xcassets in Resources */,
 				1A42C2A21C0E3A8D000F2137 /* LaunchScreen.storyboard in Resources */,
 				C73F00841D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */,
+				C7D02C611D369DE1008A0738 /* The Tale of the Pie and the Patty Pan.epub in Resources */,
 				657641A51D1BD26100FB8230 /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
+				C7D02C5F1D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub in Resources */,
 				1A42C2921C0E3883000F2137 /* Main.storyboard in Resources */,
+				C7D02C5E1D369DE1008A0738 /* The Tale of Ginger and Pickles.epub in Resources */,
 				C73F00821D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */,
+				C7D02C601D369DE1008A0738 /* The Tale of Mrs. Tittlemouse.epub in Resources */,
+				C7D02C5D1D369DE1008A0738 /* The Story of Miss Moppet.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +371,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D02C661D369DF0008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub in Resources */,
+				C7D02C671D369DF0008A0738 /* The Tale of Mrs. Tittlemouse.epub in Resources */,
 				C792C8B71D22BB3800C636DD /* The Tale of Peter Rabbit - Beatrix Potter.epub in Resources */,
+				C7D02C681D369DF0008A0738 /* The Tale of the Pie and the Patty Pan.epub in Resources */,
 				C73F00831D2EBA9500AA7345 /* The Tailor of Gloucester.epub in Resources */,
+				C7D02C651D369DF0008A0738 /* The Tale of Ginger and Pickles.epub in Resources */,
+				C7D02C641D369DF0008A0738 /* The Story of Miss Moppet.epub in Resources */,
 				C73F00851D2EBA9500AA7345 /* The Tale of Johnny Town-Mouse.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

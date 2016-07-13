@@ -25,12 +25,12 @@ class EpubStoryReader : EpubStoryReading {
         return xmlDocs
     }   
     
-    private func findStoryStartingElement(root: AEXMLElement) -> AEXMLElement? {
+    private func findStoryStartingElement(root: AEXMLElement, element: String) -> AEXMLElement? {
         
-        if let tableElements = root["table"].all where tableElements.count == 1 {
+        if let tableElements = root[element].all where tableElements.count == 1 {
             
             print("found one table \n")
-            return root["table"]
+            return root[element]
         } else {
             print("Warning: default root element returned in findStoryStartingElement \n")
             return nil
@@ -46,7 +46,6 @@ class EpubStoryReader : EpubStoryReading {
         
         //let basePath = book.spine.spineReferences.first?.resource.basePath() ?? ""
         let coverImage = book.coverImage?.href ?? ""
-        
         let authorNames = book.metadata.creators.flatMap { $0.name }
         let author = authorNames.joinWithSeparator(", ")
         let language = book.metadata.language.capitalizedString
@@ -62,7 +61,6 @@ class EpubStoryReader : EpubStoryReading {
         
         let storyBookInfo = StoryBookInfo(coverImage: coverImage, title: title, authors: author, language: language, date: date, publisher: publisher)
         
-        
         let xmlDocs = xmlDocuments(book)
         
         let storyPages = 
@@ -70,62 +68,30 @@ class EpubStoryReader : EpubStoryReading {
             .filter { $0.root["body"].children.count > 1 } 
             .flatMap { xmlDoc -> [StoryPage] in
         
-            //let head = xmlDoc.root["head"]
             let body = xmlDoc.root["body"]
-            guard let storyStartElement = self.findStoryStartingElement(body) 
+                
+            guard let storyStartElement = self.findStoryStartingElement(body, element: "table") 
                 else { return [] }
             
-            let allResults = storyStartElement.classify("tr") //tr//p//table
-            //allResults.forEach { print($0) }
+            let allResults = storyStartElement.classify("tr")
+            //let allResults = body.classify("table")
+            //let allResults = body.classify("p") 
+                //allResults.forEach { print($0) }
             
-//            let introPages =    
-//                allResults
-//                    .split { $0.addHrPageMarker() }
-//                    .map { $0.flatMap { $0 } }
-//                    .dropLast()
-//            
-//            let introPages =    
-//                allResults
-//                    .split { $0.addHrPageMarker() }
-//                    .map { $0.flatMap { $0 } }
-//                    .dropLast(2)
-//            //introPages.forEach { print($0) }
-//            //print("\n Intro pages: \(introPages.count) \n")
-//            
-//                
-////            let mainPages =    
-////                allResults
-////                    .split { $0.addHrPageMarker() }
-////                    .last
-////                    .flatMap{ $0 }!
-////                    .split { $0.addPagebreak() }
-////                    .map { $0.flatMap { $0 } }
-//            
             let mainPages =    
                 allResults
+//                    .split { $0.addHrPageMarker() }
+//                    .last
+//                    .flatMap{ $0 }!
+                    
                     .split { $0.addPagebreak() }
                     .map { $0.flatMap { $0 } }
+            
             //mainPages.forEach { print($0) }
             //print("\n Main pages: \(mainPages.count) \n")
             
-            
-////            let introStoryPages = introPages.enumerate().map { (pageNumber, arrayOfElementTypes) -> StoryPage in 
-////                
-////                let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
-////                let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
-////                
-////                print("\n TopImages ===== \(firstImgage) \n ")
-////                print(" Top Paragraph ===== \(texts) \n")
-////                
-////                let storyPage = StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNumber)
-////                
-////                
-////                return storyPage
-////            }
-////            
-//            
-//                        
-                let mainStoryPages = mainPages.enumerate().map { (pageNumber, arrayOfElementTypes) -> StoryPage in 
+     
+            let mainStoryPages = mainPages.enumerate().map { (pageNumber, arrayOfElementTypes) -> StoryPage in 
                 
                 let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
                 let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")

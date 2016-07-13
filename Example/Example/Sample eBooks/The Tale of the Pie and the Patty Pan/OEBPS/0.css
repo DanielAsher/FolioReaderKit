@@ -1,0 +1,39 @@
+/*  XML blockout */
+p {
+    margin-top: 0.75em;
+    text-align: justify;
+    margin-bottom: 0.75em
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    /* all headings centered */
+    clear: both
+    }
+body {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+.blockquot {
+    margin-left: 5%;
+    margin-right: 10%
+    }
+.center {
+    text-align: center
+    }
+.credits {
+    text-align: center;
+    font-size: 75%
+    }
+.smcap {
+    font-variant: small-caps
+    }
+.caption {
+    font-weight: bold
+    }
+.figcenter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center
+    }

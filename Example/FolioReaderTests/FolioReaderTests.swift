@@ -19,7 +19,12 @@ class FolioReaderTests: QuickSpec {
     var ePubsCollection : [String] = [
         "The Tale of Peter Rabbit - Beatrix Potter",
         "The Tailor of Gloucester",
-        "The Tale of Johnny Town-Mouse"
+        "The Tale of Johnny Town-Mouse",
+        "The Story of Miss Moppet",
+        "The Tale of Ginger and Pickles",
+        "The Tale of Mrs. Tiggy-Winkle",
+        "The Tale of Mrs. Tittlemouse",
+        "The Tale of the Pie and the Patty Pan"
         ]
    
     override func spec() {
@@ -68,7 +73,7 @@ class FolioReaderTests: QuickSpec {
                 
             }
         
-            fit("EpubStoryReader correctly creates StoryBook from 'The Tailor of Gloucester'") 
+            it("EpubStoryReader correctly creates StoryBook from 'The Tailor of Gloucester'") 
             {
                 
                 let epubStoryReader = EpubStoryReader()
@@ -96,8 +101,7 @@ class FolioReaderTests: QuickSpec {
                     expect(storyBook.pages[6].paragraph) == "But the tailor came out of his shop, and shuffled home through the snow. He lived quite near by in College Court, next the doorway to College Green; and although it was not a big house, the tailor was so poor he only rented the kitchen. He lived alone with his cat; it was called Simpkin."
                     
                     
-                }catch let err 
-                {
+                }catch let err {
                     XCTAssert(false, "\(err)")
                     
                     print(err)
@@ -106,7 +110,7 @@ class FolioReaderTests: QuickSpec {
             }
             
             
-            it("EpubStoryReader correctly creates StoryBook from 'The Tale of Johnny Town-Mouse'") 
+            fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Johnny Town-Mouse'") 
             {
                 
                 let epubStoryReader = EpubStoryReader()
