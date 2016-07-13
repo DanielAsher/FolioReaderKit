@@ -11,4 +11,5 @@ import Foundation
 struct StoryPage {
     var image: String = ""
     var paragraph: String = ""
+    var pageNumber: Int = 0
 }
