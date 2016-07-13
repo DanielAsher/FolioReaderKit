@@ -12,14 +12,14 @@ import AEXML
 enum ElementType : CustomStringConvertible {
     case text(String)
     case image(String) // typealias Href
-    case firstPageMarker
+    case hrPageMarker
     case pagebreak
     
     var description: String {
         switch self {
-        case let .text(str): return "\(str)"
-        case let .image(href) : return "\(href)"
-        case .firstPageMarker: return "firstPage"
+        case let .text(str): return "text: \(str)"
+        case let .image(href) : return "image: \(href)"
+        case .hrPageMarker: return "hrPageMarker: "
         case .pagebreak: return "pagebreak: "
             
         }
@@ -39,26 +39,44 @@ enum ElementType : CustomStringConvertible {
         default: return nil
         }        
     }
+    
+    func addPagebreak() -> Bool {
+        switch self {
+        case .pagebreak: return true
+        default: return false
+        }
+    }
+    
+    func addHrPageMarker() -> Bool {
+        switch self {
+        case .hrPageMarker: return true
+        default: return false
+        }
+    }
+    
+    
 }
 
 extension AEXMLElement {
-    func classify() -> [ElementType] {
+    func classify(type: String) -> [ElementType] {
+        
         switch (self.children.count, self.name) {
         case (0, _):
             if let href = self.attributes["src"] where self.name == "img" {
                 return [.image(href)]
-            } else if self.name == "hr" {
-                return [.pagebreak]
+            } 
+            else if self.name == "hr" {
+                return [.hrPageMarker]
             }
             else if let textContent = self.value {
                 return [.text(textContent)]
             } else {
                 return []//[.empty]
             }
-        case (_, "table"):
-            return [.pagebreak] + self.children.flatMap { $0.classify() }
+        case (_, type): 
+            return [.pagebreak] + self.children.flatMap { $0.classify(type) }   
         case _:
-            return self.children.flatMap { $0.classify() }
+            return self.children.flatMap { $0.classify(type) }
         }
     }
 
