@@ -33,8 +33,12 @@ class EpubStoryReader : EpubStoryReading {
         parser.readEpub(epubPath: path.path!)
         let book = parser.book
         let xmlDocs = xmlDocuments(book)
-
-        let cover = book.coverImage?.fullHref ?? ""
+        
+        let basePath = book.spine.spineReferences.first?.resource.basePath() ?? ""
+        let coverFullref = book.coverImage?.fullHref ?? ""
+        let cover = "\(basePath)/\(coverFullref)"
+        
+        
         let authorNames = book.metadata.creators.flatMap { $0.name }
         let author = authorNames.joinWithSeparator(", ")
         let language = book.metadata.language.capitalizedString
@@ -42,10 +46,10 @@ class EpubStoryReader : EpubStoryReading {
         let date = book.metadata.dates.first?.date ?? ""
         let title = book.metadata.titles.first ?? ""
         
-        print("cover ===== \(cover)")
+        print("\n cover ===== \(cover)")
         print("language ===== \(language)")
         print("title ===== \(title)")
-        print("author ===== \(author)")
+        print("author ===== \(author) \n")
         
         let storyBookInfo = StoryBookInfo(cover: cover, title: title, authors: author, language: language, date: date, publisher: publisher)
         
@@ -54,30 +58,65 @@ class EpubStoryReader : EpubStoryReading {
             //let head = xmlDoc.root["head"]
             let body = xmlDoc.root["body"]
            
-            let allResults = body.classify()
+            let allResults = body.classify("tr") 
+            allResults.forEach { print($0) }
             
-            let pagesFound = allResults.split { 
-                switch $0 { 
-                case ElementType.pagebreak: return true
-                default: return false } 
-            }.map { $0.flatMap { $0 } }
+            let introPages =    
+                allResults
+                    .split { $0.addHrPageMarker() }
+                    .map { $0.flatMap { $0 } }
+                    .dropLast()
+            
+            //introPages.forEach { print($0) }
+            //print("\n Intro pages: \(introPages.count) \n")
+            
+            let mainPages =    
+                allResults
+                    .split { $0.addHrPageMarker() }
+                    .last.flatMap{ $0 }!
+                    .split { $0.addPagebreak() }
+                    .map { $0.flatMap { $0 } }
+            //mainPages.forEach { print($0) }
+            //print("\n Main pages: \(mainPages.count) \n")
             
             
-            let pages = pagesFound.map { arrayOfElementTypes -> StoryPage in 
+            
+            var pageNum1 = 0
+            let introStoryPages = introPages.map { arrayOfElementTypes -> StoryPage in 
                 
-                let firstImg = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
-                let allText =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
-               
-                print("firstImgage ===== \(firstImg)")
-                print("allText ===== \(allText)")
+                let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
+                let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
                 
-                let storyPage = StoryPage(image: firstImg, paragraph: allText)
+                print("\n TopImages ===== \(firstImgage) \n ")
+                print(" Top Paragraph ===== \(texts) \n")
+                
+                let storyPage = StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNum1)
+                
+                pageNum1 += 1
                 
                 return storyPage
+            }
+            
+            
+            
+            var pageNum2 = 0
+            let mainStoryPages = mainPages.map { arrayOfElementTypes -> StoryPage in 
                 
+                let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
+                let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
+//                let pageNum =  mainPages.reduce(0) { acc, x in return acc + 1 }
+               
+                print("\n page number ===== \(pageNum2)")
+                print("\n Image ===== \(firstImgage) \n ")
+                print(" paragraph ===== \(texts) \n")
+                
+                let storyPage = StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNum2)
+                pageNum2 += 1
+                
+                return storyPage
             }
 
-            return pages
+            return mainStoryPages
             
         }
         
