@@ -9,7 +9,7 @@
 import Foundation
 
 struct StoryBookInfo {
-    var cover: String = ""
+    var coverImage: String = ""
     var title: String = ""
     var authors: String = ""
     var language: String = ""
