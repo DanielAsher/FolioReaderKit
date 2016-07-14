@@ -40,14 +40,14 @@ enum ElementType : CustomStringConvertible {
         }        
     }
     
-    func addPagebreak() -> Bool {
+    func isPagebreak() -> Bool {
         switch self {
         case .pagebreak: return true
         default: return false
         }
     }
     
-    func addHrPageMarker() -> Bool {
+    func isHrPageMarker() -> Bool {
         switch self {
         case .hrPageMarker: return true
         default: return false
@@ -55,12 +55,25 @@ enum ElementType : CustomStringConvertible {
     }
     
     
+    
+    
 }
+
+extension Array {
+    
+    func splitInChunks(chunkSize : Int) -> Array<Array<Element>> {
+        return 0.stride(to: self.count, by: chunkSize)
+            .map { Array(self[$0..<$0.advancedBy(chunkSize, limit: self.count)]) }
+    }
+}
+
 
 extension AEXMLElement {
     
     func classify(type: String ) -> [ElementType] {
-
+        
+        //print("names:  ==  \(self.name) = childrens === \(self.children.count)")
+        
         switch (self.children.count, self.name) {
             
             case (0, _):
@@ -76,7 +89,8 @@ extension AEXMLElement {
                     return []//[.empty]
                 }
             case (_, type): 
-                return [.pagebreak] + self.children.flatMap { $0.classify( type ) }   
+                return  [.pagebreak] + self.children.flatMap { $0.classify( type ) } 
+                
             case _:
                 return self.children.flatMap { $0.classify( type ) }
         }
