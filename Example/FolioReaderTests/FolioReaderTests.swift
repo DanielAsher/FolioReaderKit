@@ -21,8 +21,8 @@ class FolioReaderTests: QuickSpec {
         "The Tailor of Gloucester",
         "The Tale of Johnny Town-Mouse",
         "The Story of Miss Moppet",
-        "The Tale of Ginger and Pickles",
         "The Tale of Mrs. Tiggy-Winkle",
+        "The Tale of Ginger and Pickles",
         "The Tale of Mrs. Tittlemouse",
         "The Tale of the Pie and the Patty Pan"
         ]
@@ -99,6 +99,14 @@ class FolioReaderTests: QuickSpec {
                     expect(storyBook.info.language).to(equal("En"))
                     
                     expect(storyBook.pages[6].paragraph) == "But the tailor came out of his shop, and shuffled home through the snow. He lived quite near by in College Court, next the doorway to College Green; and although it was not a big house, the tailor was so poor he only rented the kitchen. He lived alone with his cat; it was called Simpkin."
+                    let prefixOfLastSentence = String(storyBook.pages.last!.paragraph.characters.prefix(12))
+//                    let expectedPrefixOfLastSentence = String("The stitches of those button-holes" .characters.prefix(12))
+                    let result = 
+                        storyBook.pages
+                        .enumerate()
+                        .filter { $0.element.paragraph.containsString("The stitches of those button-holes") }.first! 
+                    print(result, storyBook.pages.count)
+                    expect(prefixOfLastSentence) == String("The stitches of those button-holes".characters.prefix(12))
                     
                     
                 }catch let err {
@@ -110,7 +118,7 @@ class FolioReaderTests: QuickSpec {
             }
             
             
-            fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Johnny Town-Mouse'") 
+            it("EpubStoryReader correctly creates StoryBook from 'The Tale of Johnny Town-Mouse'") 
             {
                 
                 let epubStoryReader = EpubStoryReader()
@@ -131,9 +139,18 @@ class FolioReaderTests: QuickSpec {
                     expect(storyBook.info.publisher).to(equal(""))
                     
                     XCTAssertLessThan(storyBook.pages.count, 30) // test pass: 
-                    XCTAssertEqual(storyBook.pages.first!.pageNumber, 4) // test fail: pages number
+                    XCTAssertEqual(storyBook.pages.first!.pageNumber, 1) // test fail: pages number
                     expect(storyBook.pages.count) == 25 // test pass: pages amount
                     
+                    expect(storyBook.pages.last?.paragraph) == "One place suits one person, another place suits another person. For my part I prefer to live in the country, like Timmy Willie." // last page
+                    
+                    expect(storyBook.pages.first?.paragraph) == "Johnny Town-mouse was born in a cupboard. Timmy Willie was born in a garden. Timmy Willie was a little country mouse who went to town by mistake in a hamper. The gardener sent vegetables to town once a week by carrier; he packed them in a big hamper."
+                    
+                    expect(storyBook.pages[19].paragraph) == "So Timmy Willie said good-bye to his new friends, and hid in the hamper with a crumb of cake and a withered cabbage leaf; and after much jolting, he was set down safely in his own garden."// test fail //16
+                    
+                    expect(storyBook.pages[18].paragraph) == "The winter passed; the sun came out again; Timmy Willie sat by his burrow warming his little fur coat and sniffing the smell of violets and spring grass. He had nearly forgotten his visit to town. When up the sandy path all spick and span with a brown leather bag came Johnny Town-mouse!" //test pass
+                    
+                    expect(storyBook.pages[12].image) == "@public@vhost@g@gutenberg@html@files@15284@15284-h@images@town14.jpg" // test pass
                     
                 }catch let err 
                 {
@@ -143,7 +160,75 @@ class FolioReaderTests: QuickSpec {
                 
             }
 
+            it("EpubStoryReader correctly creates StoryBook from 'The Story of Miss Moppet'") 
+            {
+                
+                let epubStoryReader = EpubStoryReader()
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[3], withExtension: "epub")!
+                
+                do {
+                    
+                    let storyBook = try epubStoryReader.read(epubURL) 
+                    XCTAssertEqual(storyBook.info.coverImage, "@public@vhost@g@gutenberg@html@files@14848@14848-h@images@cover.jpg")//test pass: check if there is a cover
+                    
+                    XCTAssertEqual(storyBook.info.title,  "The Story of Miss Moppet")// test pass: check if the title is
+                    
+                    XCTAssertEqual(storyBook.info.authors,  "Beatrix Potter") //test pass: check the author name
+                    XCTAssertEqual(storyBook.pages[4].pageNumber, 5) // test pass: pages number
+                    
+                    XCTAssertEqual(storyBook.info.language, "En") // test fail: check language, it should be En
+                    expect(storyBook.info.publisher).to(equal(""))
+                    
+                    XCTAssertLessThan(storyBook.pages.count, 20) // test pass: 
+                    XCTAssertEqual(storyBook.pages.first!.pageNumber, 1) // test pass: pages number
+                    
+                    
+                    expect(storyBook.pages[0].paragraph.containsString("This is a Pussy called Miss Moppet")) == true
+                    
+                    expect(storyBook.pages[1].paragraph.containsString("This is the Mouse peeping out behind")) == true
+                    
+                    expect(storyBook.pages[2].paragraph.containsString("she misses the Mouse")) == true
+                    expect(storyBook.pages[3].paragraph.containsString("is a very hard cupboard!")) == true
+                    expect(storyBook.pages[4].paragraph.containsString("The Mouse watches Miss Moppet from")) == true
+                    expect(storyBook.pages[5].paragraph.containsString("Miss Moppet ties up her head in a duster")) == true
+                    expect(storyBook.pages[6].paragraph.containsString("The Mouse thinks she is looking very ill")) == true
+                    expect(storyBook.pages[7].paragraph.containsString("The Mouse comes a little nearer")) == true
+                    expect(storyBook.pages[8].paragraph.containsString("Miss Moppet holds her poor head in her paws, and looks at him through a hole in the duster.")) == true
+                    expect(storyBook.pages[9].paragraph.containsString("Miss Moppet jumps upon the Mouse!")) == true
+                    expect(storyBook.pages[10].paragraph.containsString("Miss Moppet—Miss Moppet thinks she will")) == true
+                    expect(storyBook.pages[11].paragraph.containsString("and tosses it about like a ball")) == true
+                    expect(storyBook.pages[12].paragraph.containsString(" and when she untied it—there was no Mouse!")) == true
+                    expect(storyBook.pages[13].paragraph.containsString("a jig on the top of the cupboard!")) == true
+                    
+                }catch let err 
+                {
+                    XCTAssert(false, "\(err)")
+                    print(err)
+                }
+                
+            }
             
+            
+            fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Mrs. Tiggy-Winkle'") 
+            {
+                
+                let epubStoryReader = EpubStoryReader()
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[4], withExtension: "epub")!
+                
+                do {
+                    
+                    let storyBook = try epubStoryReader.read(epubURL) 
+                    
+                }catch let err 
+                {
+                    XCTAssert(false, "\(err)")
+                    print(err)
+                }
+                
+            }
+            
+            
+                    
             it("finds primary html resource") {
 
             }
