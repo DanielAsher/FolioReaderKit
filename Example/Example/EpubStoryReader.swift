@@ -70,35 +70,37 @@ class EpubStoryReader : EpubStoryReading {
         
             let body = xmlDoc.root["body"]
                 
-            guard let storyStartElement = self.findStoryStartingElement(body, element: "table") 
-                else { return [] }
-            
-            let allResults = storyStartElement.classify("tr")
-            //let allResults = body.classify("table")
-            //let allResults = body.classify("p") 
-                //allResults.forEach { print($0) }
-            
-            let mainPages =    
-                allResults
-//                    .split { $0.addHrPageMarker() }
-//                    .last
-//                    .flatMap{ $0 }!
+           // guard let storyStartElement = 
+            //    self.findStoryStartingElement(body, element: "table") else { return [] }
+           
+                
+            var mainPages =  
+                //storyStartElement.classify("tr")
+                //body.classify("table")
+                body.classify("p") 
+                    .split { $0.isHrPageMarker() }
+                    .last!
                     
-                    .split { $0.addPagebreak() }
-                    .map { $0.flatMap { $0 } }
+                    
+                    .split { $0.isPagebreak() }
+                    .map { $0.flatMap { $0 } 
+                }
             
-            //mainPages.forEach { print($0) }
-            //print("\n Main pages: \(mainPages.count) \n")
+//            mainPages[0].removeFirst()
+//            let changed = mainPages.flatMap{ $0 }.splitInChunks(2)
+//            mainPages = changed
+                
+            mainPages.forEach{ print("\($0) \n") }
             
-     
             let mainStoryPages = mainPages.enumerate().map { (pageNumber, arrayOfElementTypes) -> StoryPage in 
                 
                 let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
                 let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
 
-                print("\n page number ===== \(pageNumber)")
-                print("\n Image ===== \(firstImgage) \n ")
-                print(" paragraph ===== \(texts) \n")
+//                print("\n page number ===== \(pageNumber)")
+//                print("\n Image ===== \(firstImgage) \n ")
+//                print(" paragraph ===== \(texts) \n")
+                //print("arrayOfElementTypes.count", arrayOfElementTypes.count)
                 
                 let storyPage = StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNumber)
                                 
