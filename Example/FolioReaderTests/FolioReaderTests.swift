@@ -22,8 +22,8 @@ class FolioReaderTests: QuickSpec {
         "The Tale of Johnny Town-Mouse",
         "The Story of Miss Moppet",
         "The Tale of Mrs. Tiggy-Winkle",
-        "The Tale of Ginger and Pickles",
         "The Tale of Mrs. Tittlemouse",
+        "The Tale of Ginger and Pickles",
         "The Tale of the Pie and the Patty Pan"
         ]
    
@@ -209,11 +209,48 @@ class FolioReaderTests: QuickSpec {
             }
             
             
-            fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Mrs. Tiggy-Winkle'") 
+            it("EpubStoryReader correctly creates StoryBook from 'The Tale of Mrs. Tiggy-Winkle'") 
             {
                 
                 let epubStoryReader = EpubStoryReader()
                 let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[4], withExtension: "epub")!
+                
+                do {
+                    
+                    let storyBook = try epubStoryReader.read(epubURL) 
+                    
+                }catch let err 
+                {
+                    XCTAssert(false, "\(err)")
+                    print(err)
+                }
+                
+            }
+            
+            it("EpubStoryReader correctly creates StoryBook from 'The Tale of Mrs. Tittlemouse'") 
+            {
+                
+                let epubStoryReader = EpubStoryReader()
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[5], withExtension: "epub")!
+                
+                do {
+                    
+                    let storyBook = try epubStoryReader.read(epubURL) 
+                    
+                }catch let err 
+                {
+                    XCTAssert(false, "\(err)")
+                    print(err)
+                }
+                
+            }
+            
+            
+            fit("EpubStoryReader correctly creates StoryBook from 'The Tale of Ginger and Pickles'") 
+            {
+                
+                let epubStoryReader = EpubStoryReader()
+                let epubURL = NSBundle(forClass: self.dynamicType).URLForResource(self.ePubsCollection[6], withExtension: "epub")!
                 
                 do {
                     

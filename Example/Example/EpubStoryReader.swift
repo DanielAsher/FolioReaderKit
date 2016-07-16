@@ -31,7 +31,8 @@ class EpubStoryReader : EpubStoryReading {
             
             print("found one table \n")
             return root[element]
-        } else {
+        }
+        else {
             print("Warning: default root element returned in findStoryStartingElement \n")
             return nil
         }
@@ -69,37 +70,47 @@ class EpubStoryReader : EpubStoryReading {
             .flatMap { xmlDoc -> [StoryPage] in
         
             let body = xmlDoc.root["body"]
-                
-           // guard let storyStartElement = 
-            //    self.findStoryStartingElement(body, element: "table") else { return [] }
+            
+            //guard let storyStartElement = 
+            //    self.findStoryStartingElement(body, element: "div") else { return [] }//table
            
                 
             var mainPages =  
                 //storyStartElement.classify("tr")
                 //body.classify("table")
                 body.classify("p") 
+                //storyStartElement.classify("div") 
                     .split { $0.isHrPageMarker() }
+                    
+                    //.dropFirst(2)
+                    
+                    .flatMap { $0 }
+                    
                     .last!
                     
                     
                     .split { $0.isPagebreak() }
                     .map { $0.flatMap { $0 } 
-                }
+            }
             
-//            mainPages[0].removeFirst()
-//            let changed = mainPages.flatMap{ $0 }.splitInChunks(2)
-//            mainPages = changed
+            //mainPages.removeFirst()
                 
+            mainPages[0].removeFirst()
+            let changed = mainPages.flatMap{ $0 }.splitInChunks(2)
+            mainPages = changed
+           
             mainPages.forEach{ print("\($0) \n") }
+            //mainPages.flatMap{ $0 }.forEach{ print("\($0) \n") }
+            
             
             let mainStoryPages = mainPages.enumerate().map { (pageNumber, arrayOfElementTypes) -> StoryPage in 
                 
                 let firstImgage = arrayOfElementTypes.flatMap { $0.getImage() }.first ?? ""
                 let texts =  arrayOfElementTypes.flatMap { $0.getText() }.joinWithSeparator(" ")
 
-//                print("\n page number ===== \(pageNumber)")
-//                print("\n Image ===== \(firstImgage) \n ")
-//                print(" paragraph ===== \(texts) \n")
+                print("\n page number ===== \(pageNumber)")
+                print("\n Image ===== \(firstImgage) \n ")
+                print(" paragraph ===== \(texts) \n")
                 //print("arrayOfElementTypes.count", arrayOfElementTypes.count)
                 
                 let storyPage = StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNumber)

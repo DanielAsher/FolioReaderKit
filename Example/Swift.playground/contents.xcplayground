@@ -5,5 +5,6 @@
         <page name='Subscript func'/>
         <page name='BooleanType'/>
         <page name='Lazy sequence'/>
+        <page name='Filter'/>
     </pages>
 </playground>
