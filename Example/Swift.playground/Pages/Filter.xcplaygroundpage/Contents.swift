@@ -90,6 +90,55 @@ class Person : NSObject {
 //    return person.isManager!
 //}.count
 //
+
+
+
 //let moreCount = peopleArray.filter{ $0.isManager! }.count
 
+//                let texts =  arrayOfElementTypes.enumerate().flatMap{ (ind, el) -> String? in
+//                    
+//                    if el.getText()?.characters.count < 2 {
+//                      
+//                        return nil
+//                    }else{
+//                        return el.getText()
+//                    }
+//                }.joinWithSeparator("")
 
+
+//                if texts.characters.count > 1 && firstImgage.characters.count > 1 {
+//                    return StoryPage(image: firstImgage, paragraph: texts, pageNumber: pageNumber)
+//                }else{
+//                    return nil
+//                }
+
+
+
+var a = ["one", "two", "three"]
+
+// Remove/filter item with value 'two'
+
+a = a.filter { $0 != "two" }
+print(a)
+
+
+
+
+//let stringJoins = 
+//    mainPages
+//        .enumerate().map { (ind, elementTypeArray: [ElementType]) -> String in
+//            
+//            if ind == 9 {
+//                
+//                return elementTypeArray
+//                    .flatMap { elementType -> String in
+//                        switch elementType {
+//                        case .text(let txt): return txt
+//                        default: return ""
+//                        }
+//                    }.joinWithSeparator(" ")
+//                
+//            } else {
+//                return ""
+//            }
+//        }.filter { $0.isEmpty == false }.joinWithSeparator(" ")

@@ -23,3 +23,19 @@ a["Seb"]
 a.contains("Seb")
 
 var str = "Hello, playground"
+
+
+
+//let getFullText = mainPages.flatMap { el -> [String] in
+//    
+//    let full = el.flatMap { ell -> String in
+//        
+//        switch ell {
+//        case let .text(tt): return tt
+//        case let .image(img): return img
+//        default: return ""
+//        }
+//    }
+//    return full
+//}
+//print(getFullText.flatMap{ $0 })
