@@ -133,3 +133,13 @@ extension CGFloat {
     }
 
 }
+
+extension Array {
+    func myReduce<T, U>(seed:U, combiner:(U, T) -> U) -> U {
+        var current = seed
+        for item in self {
+            current = combiner(current, item as! T)
+        }
+        return current
+    }
+}

@@ -142,3 +142,32 @@ print(a)
 //                return ""
 //            }
 //        }.filter { $0.isEmpty == false }.joinWithSeparator(" ")
+
+
+
+let arrs = [
+    ["orange","apple","banana"],
+    ["zidane","ronaldo", "messi", "giggs"],
+    ["minoo","Elenn","Lola"],
+    ["Medd, Add, Zebs"]
+]
+
+let res = arrs.flatMap { el -> String in
+    
+    return el.reduce(" ") {(total, number) in total + "\(number)"}
+    
+}
+print("reeeessss  ", res)
+
+
+let digits = ["3", "1", "4", "1"]
+
+let numbers = Array(1...10)
+    .reduce("numbers: ") {(total, number) in total + "\(number)"}
+print(numbers)
+
+
+let maxNumber = Array(1...10)
+    .reduce(0) { (total, number) in max(total, number) }
+print(maxNumber)
+
