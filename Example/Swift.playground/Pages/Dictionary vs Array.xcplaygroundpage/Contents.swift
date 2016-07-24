@@ -55,3 +55,13 @@ extension SequenceType where Generator.Element == String {
 strings.joinWithSeparator(" ")
 strings.myJoinWithSeperator(" ")
 //print(sentence)
+
+
+
+//let extend2 = [element, checkTextInFuture].flatten()
+//let extend3 = [element, checkTextInFuture].reduce([],combine:+)
+
+
+
+
+

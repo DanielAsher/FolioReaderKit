@@ -171,3 +171,22 @@ let maxNumber = Array(1...10)
     .reduce(0) { (total, number) in max(total, number) }
 print(maxNumber)
 
+
+
+
+//func checkEl (elements: [ElementType], inTime: Int) -> [Int]
+//{
+//    var count = inTime
+//    let myArr = elements.flatMap { element -> Int? in
+//        
+//        if element.getText() != nil{
+//            
+//            count += 1
+//            return nil
+//        }else{
+//            return count
+//        }
+//        }.filter { $0 != nil }
+//    
+//    return myArr
+//}
