@@ -28,7 +28,20 @@ struct StoryPage : CustomStringConvertible {
     }
 }
 
-let xmlString1 = "<body><row><img src='google.com/image1'/><p>Hello</p></row></body>"
+//let xmlString1 = " <body>
+//                    <row>
+//                        <img src='google.com/image1'/>
+//                            <p>
+//                                "Hello, my name is Ilmas,"
+//                                <i>I</i>    
+//                                "I used to play piono but I play guitar."
+//                            </p>   
+//                    </row>
+//                    </body>"
+
+let xmlString1 = "<body><row><img src='google.com/image1'/><p>\"Hello, my name is Ilmas,\"<i>I</i>\"I used to play piono but I play guitar.\"</p></row></body>"
+
+
 
 let xmlData1 = XmlGrammar.body(
     //    [
