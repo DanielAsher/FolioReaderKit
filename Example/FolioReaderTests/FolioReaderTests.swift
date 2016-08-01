@@ -274,6 +274,46 @@ class FolioReaderTests: QuickSpec {
         }
         
         
+        
+        
+//        func testMixedContentClassifier() {
+//            let mixedContentXml = "<html><body><p>mixed content <i>iteration</i> support</p></body></html>"
+//            
+//            let mixedContentXml2 = 
+//                "<root xmlns:h=\"http://www.w3.org/TR/html4/\"" +
+//                    "  xmlns:f=\"http://www.w3schools.com/furniture\">" +
+//                    "  <h:table>" +
+//                    "    <h:tr>" +
+//                    "      <h:td>Apples</h:td>" +
+//                    "      <h:td>Bananas</h:td>" +
+//                    "    </h:tr>" +
+//                    "  </h:table>" +
+//                    "  <f:table>" +
+//                    "     My name is George," +
+//                    "    <f:text>The African Coffee Table</f:text>" +
+//                    "     I don't want to sit on the table," +
+//                    "  </f:table>" +
+//            "</root>"
+//            
+//            let mixedContentXml3 = "<p><i>I</i> have never felt sleepy after eating lettuces; but then <i>I</i> am not a rabbit.</p>"
+//            
+//            let xml = SWXMLHash.parse(mixedContentXml3)
+//            let elementTypes = xml.element!.classifier( "" )
+//            
+//            let countChildren = xml["html"]["body"].all.count
+//            //let countChildren = xml["root"].all.count
+//            // print(elementTypes, countChildren)
+//            
+//            
+//            //let res =  xml["root"]["h:table"]["h:tr"]["h:td"][0].element!.text!
+//            //let res1 =  xml["root"]["f:table"].flatMap { $0 }
+//            //let res2 =  xml["root"]["f:table"].flatMap { $0.element!.text! }
+//            //print(res1)
+//            
+//        }
+//    
+        
+        
             
     }
 }

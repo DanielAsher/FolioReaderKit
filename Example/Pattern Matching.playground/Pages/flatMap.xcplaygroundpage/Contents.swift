@@ -45,5 +45,27 @@ let reduce = me.reduce("",combine: +)
 
 
 
+
+
+//                let bodyChild = body.children.flatMap { elem -> [ElementType] in
+//                    
+//              
+//                    if elem.element!.description.containsString(self.startMarker) == true{
+//                        
+//                        print("yes", elem.element!.description)
+//                    }else{
+//                        print("no", elem.element!.description)
+//                    }
+////                    if elem.element!.name == bodyChildWithName {
+////                        return elem.element!.classifier( pageBreaktype )
+////                    }else{
+////                        return []
+////                    }
+//                    return [ElementType.hrPageMarker]
+//                }
+
+
+
+
 //print(ccc.flatMap{ $0 })
 
