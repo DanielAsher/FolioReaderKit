@@ -28,6 +28,26 @@
 		C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D21D266D0E00C636DD /* Math+Ext.swift */; };
 		C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792C8D51D26AB1300C636DD /* WordsModel.swift */; };
 		C7B9045C1D2FC75B00CB05EA /* DOMParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */; };
+		C7CA75541D534964000A26E7 /* CecilyParsleysNurseryRhymes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75401D534964000A26E7 /* CecilyParsleysNurseryRhymes.swift */; };
+		C7CA75551D534964000A26E7 /* TheStoryOfMissMoppet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75411D534964000A26E7 /* TheStoryOfMissMoppet.swift */; };
+		C7CA75561D534964000A26E7 /* TheStoryOfAFierceBadRabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75421D534964000A26E7 /* TheStoryOfAFierceBadRabbit.swift */; };
+		C7CA75571D534964000A26E7 /* TheTaleOfGingerAndPickles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75431D534964000A26E7 /* TheTaleOfGingerAndPickles.swift */; };
+		C7CA75581D534964000A26E7 /* TheTaleOfThePieAndThePattyPan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75441D534964000A26E7 /* TheTaleOfThePieAndThePattyPan.swift */; };
+		C7CA75591D534964000A26E7 /* TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75451D534964000A26E7 /* TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift */; };
+		C7CA755A1D534964000A26E7 /* TheTaleOfMrTod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75461D534964000A26E7 /* TheTaleOfMrTod.swift */; };
+		C7CA755B1D534964000A26E7 /* TheTaleOfJohnnyTownMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75471D534964000A26E7 /* TheTaleOfJohnnyTownMouse.swift */; };
+		C7CA755C1D534964000A26E7 /* TheTaleOfTimmyTiptoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75481D534964000A26E7 /* TheTaleOfTimmyTiptoes.swift */; };
+		C7CA755D1D534964000A26E7 /* TheTaleOfMrsTittlemouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75491D534964000A26E7 /* TheTaleOfMrsTittlemouse.swift */; };
+		C7CA755E1D534964000A26E7 /* TheTaleOfTheFlopsyBunnies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754A1D534964000A26E7 /* TheTaleOfTheFlopsyBunnies.swift */; };
+		C7CA755F1D534964000A26E7 /* TheTaleOfJemimaPuddleDuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754B1D534964000A26E7 /* TheTaleOfJemimaPuddleDuck.swift */; };
+		C7CA75601D534964000A26E7 /* TheTaleOfTomKitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754C1D534964000A26E7 /* TheTaleOfTomKitten.swift */; };
+		C7CA75611D534964000A26E7 /* TheTaleOfMrJeremyFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754D1D534964000A26E7 /* TheTaleOfMrJeremyFisher.swift */; };
+		C7CA75621D534964000A26E7 /* TheTaleOfMrsTiggyWinkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754E1D534964000A26E7 /* TheTaleOfMrsTiggyWinkle.swift */; };
+		C7CA75631D534964000A26E7 /* TheTaleOfTwoBadMice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA754F1D534964000A26E7 /* TheTaleOfTwoBadMice.swift */; };
+		C7CA75641D534964000A26E7 /* TheTaleOfBenjaminBunny.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75501D534964000A26E7 /* TheTaleOfBenjaminBunny.swift */; };
+		C7CA75651D534964000A26E7 /* TheTailorOfGloucester.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75511D534964000A26E7 /* TheTailorOfGloucester.swift */; };
+		C7CA75661D534964000A26E7 /* TheTaleOfSquirrelNutkin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75521D534964000A26E7 /* TheTaleOfSquirrelNutkin.swift */; };
+		C7CA75671D534964000A26E7 /* TheTaleOfPeterRabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CA75531D534964000A26E7 /* TheTaleOfPeterRabbit.swift */; };
 		C7D02C5D1D369DE1008A0738 /* The Story of Miss Moppet.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */; };
 		C7D02C5E1D369DE1008A0738 /* The Tale of Ginger and Pickles.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */; };
 		C7D02C5F1D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */; };
@@ -91,6 +111,26 @@
 		C792C8D41D268C3400C636DD /* Swift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift.playground; sourceTree = "<group>"; };
 		C792C8D51D26AB1300C636DD /* WordsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
 		C7B9045B1D2FC75B00CB05EA /* DOMParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOMParserTests.swift; sourceTree = "<group>"; };
+		C7CA75401D534964000A26E7 /* CecilyParsleysNurseryRhymes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CecilyParsleysNurseryRhymes.swift; sourceTree = "<group>"; };
+		C7CA75411D534964000A26E7 /* TheStoryOfMissMoppet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheStoryOfMissMoppet.swift; sourceTree = "<group>"; };
+		C7CA75421D534964000A26E7 /* TheStoryOfAFierceBadRabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheStoryOfAFierceBadRabbit.swift; sourceTree = "<group>"; };
+		C7CA75431D534964000A26E7 /* TheTaleOfGingerAndPickles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfGingerAndPickles.swift; sourceTree = "<group>"; };
+		C7CA75441D534964000A26E7 /* TheTaleOfThePieAndThePattyPan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfThePieAndThePattyPan.swift; sourceTree = "<group>"; };
+		C7CA75451D534964000A26E7 /* TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift; sourceTree = "<group>"; };
+		C7CA75461D534964000A26E7 /* TheTaleOfMrTod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfMrTod.swift; sourceTree = "<group>"; };
+		C7CA75471D534964000A26E7 /* TheTaleOfJohnnyTownMouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfJohnnyTownMouse.swift; sourceTree = "<group>"; };
+		C7CA75481D534964000A26E7 /* TheTaleOfTimmyTiptoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfTimmyTiptoes.swift; sourceTree = "<group>"; };
+		C7CA75491D534964000A26E7 /* TheTaleOfMrsTittlemouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfMrsTittlemouse.swift; sourceTree = "<group>"; };
+		C7CA754A1D534964000A26E7 /* TheTaleOfTheFlopsyBunnies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfTheFlopsyBunnies.swift; sourceTree = "<group>"; };
+		C7CA754B1D534964000A26E7 /* TheTaleOfJemimaPuddleDuck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfJemimaPuddleDuck.swift; sourceTree = "<group>"; };
+		C7CA754C1D534964000A26E7 /* TheTaleOfTomKitten.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfTomKitten.swift; sourceTree = "<group>"; };
+		C7CA754D1D534964000A26E7 /* TheTaleOfMrJeremyFisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfMrJeremyFisher.swift; sourceTree = "<group>"; };
+		C7CA754E1D534964000A26E7 /* TheTaleOfMrsTiggyWinkle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfMrsTiggyWinkle.swift; sourceTree = "<group>"; };
+		C7CA754F1D534964000A26E7 /* TheTaleOfTwoBadMice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfTwoBadMice.swift; sourceTree = "<group>"; };
+		C7CA75501D534964000A26E7 /* TheTaleOfBenjaminBunny.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfBenjaminBunny.swift; sourceTree = "<group>"; };
+		C7CA75511D534964000A26E7 /* TheTailorOfGloucester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTailorOfGloucester.swift; sourceTree = "<group>"; };
+		C7CA75521D534964000A26E7 /* TheTaleOfSquirrelNutkin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfSquirrelNutkin.swift; sourceTree = "<group>"; };
+		C7CA75531D534964000A26E7 /* TheTaleOfPeterRabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheTaleOfPeterRabbit.swift; sourceTree = "<group>"; };
 		C7D02C561D369DE1008A0738 /* The Story of Miss Moppet.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Story of Miss Moppet.epub"; sourceTree = "<group>"; };
 		C7D02C571D369DE1008A0738 /* The Tale of Ginger and Pickles.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Ginger and Pickles.epub"; sourceTree = "<group>"; };
 		C7D02C581D369DE1008A0738 /* The Tale of Mrs. Tiggy-Winkle.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Tale of Mrs. Tiggy-Winkle.epub"; sourceTree = "<group>"; };
@@ -152,6 +192,7 @@
 		1A42C28B1C0E3882000F2137 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C7CA753F1D534934000A26E7 /* BookFiles */,
 				C7FCEB771D34F88F00DB33A1 /* Services */,
 				C792C8C91D266B5200C636DD /* TextImageExample */,
 				1A42C28C1C0E3882000F2137 /* AppDelegate.swift */,
@@ -211,6 +252,33 @@
 				C792C8CA1D266B7D00C636DD /* TextImageViewController.swift */,
 			);
 			name = TextImageExample;
+			sourceTree = "<group>";
+		};
+		C7CA753F1D534934000A26E7 /* BookFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7CA75401D534964000A26E7 /* CecilyParsleysNurseryRhymes.swift */,
+				C7CA75411D534964000A26E7 /* TheStoryOfMissMoppet.swift */,
+				C7CA75421D534964000A26E7 /* TheStoryOfAFierceBadRabbit.swift */,
+				C7CA75431D534964000A26E7 /* TheTaleOfGingerAndPickles.swift */,
+				C7CA75441D534964000A26E7 /* TheTaleOfThePieAndThePattyPan.swift */,
+				C7CA75451D534964000A26E7 /* TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift */,
+				C7CA75461D534964000A26E7 /* TheTaleOfMrTod.swift */,
+				C7CA75471D534964000A26E7 /* TheTaleOfJohnnyTownMouse.swift */,
+				C7CA75481D534964000A26E7 /* TheTaleOfTimmyTiptoes.swift */,
+				C7CA75491D534964000A26E7 /* TheTaleOfMrsTittlemouse.swift */,
+				C7CA754A1D534964000A26E7 /* TheTaleOfTheFlopsyBunnies.swift */,
+				C7CA754B1D534964000A26E7 /* TheTaleOfJemimaPuddleDuck.swift */,
+				C7CA754C1D534964000A26E7 /* TheTaleOfTomKitten.swift */,
+				C7CA754D1D534964000A26E7 /* TheTaleOfMrJeremyFisher.swift */,
+				C7CA754E1D534964000A26E7 /* TheTaleOfMrsTiggyWinkle.swift */,
+				C7CA754F1D534964000A26E7 /* TheTaleOfTwoBadMice.swift */,
+				C7CA75501D534964000A26E7 /* TheTaleOfBenjaminBunny.swift */,
+				C7CA75511D534964000A26E7 /* TheTailorOfGloucester.swift */,
+				C7CA75521D534964000A26E7 /* TheTaleOfSquirrelNutkin.swift */,
+				C7CA75531D534964000A26E7 /* TheTaleOfPeterRabbit.swift */,
+			);
+			name = BookFiles;
 			sourceTree = "<group>";
 		};
 		C7E84CDE1D33F35B00193CF0 /* Model */ = {
@@ -509,19 +577,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7CA75641D534964000A26E7 /* TheTaleOfBenjaminBunny.swift in Sources */,
 				1A42C28F1C0E3882000F2137 /* ViewController.swift in Sources */,
+				C7CA755C1D534964000A26E7 /* TheTaleOfTimmyTiptoes.swift in Sources */,
 				C792C8CF1D266CD400C636DD /* UIImageEffects.swift in Sources */,
+				C7CA75581D534964000A26E7 /* TheTaleOfThePieAndThePattyPan.swift in Sources */,
+				C7CA75671D534964000A26E7 /* TheTaleOfPeterRabbit.swift in Sources */,
 				C792C8D61D26AB1300C636DD /* WordsModel.swift in Sources */,
 				C7FCEB791D34F8B100DB33A1 /* EpubStoryReader.swift in Sources */,
 				C792C8D11D266CE300C636DD /* UIKit+Ext.swift in Sources */,
 				C7FCEB7E1D35042400DB33A1 /* StoryBookInfo.swift in Sources */,
 				C7FCEB7B1D34F8DE00DB33A1 /* EpubStoryReading.swift in Sources */,
+				C7CA75601D534964000A26E7 /* TheTaleOfTomKitten.swift in Sources */,
 				C7D396AB1D26B7A600F18529 /* StoryBook.swift in Sources */,
 				C7D396AC1D26B7AB00F18529 /* StoryPage.swift in Sources */,
+				C7CA75611D534964000A26E7 /* TheTaleOfMrJeremyFisher.swift in Sources */,
+				C7CA755A1D534964000A26E7 /* TheTaleOfMrTod.swift in Sources */,
+				C7CA75591D534964000A26E7 /* TheTaleOfSamuelWhiskersOrTheRolyPolyPudding.swift in Sources */,
+				C7CA755D1D534964000A26E7 /* TheTaleOfMrsTittlemouse.swift in Sources */,
 				1A42C28D1C0E3882000F2137 /* AppDelegate.swift in Sources */,
+				C7CA755E1D534964000A26E7 /* TheTaleOfTheFlopsyBunnies.swift in Sources */,
 				C777E2391D33DBE00099F39B /* ElementType.swift in Sources */,
+				C7CA75651D534964000A26E7 /* TheTailorOfGloucester.swift in Sources */,
+				C7CA75561D534964000A26E7 /* TheStoryOfAFierceBadRabbit.swift in Sources */,
 				C7D396AE1D26BCDA00F18529 /* UITextView+Ext.swift in Sources */,
+				C7CA75621D534964000A26E7 /* TheTaleOfMrsTiggyWinkle.swift in Sources */,
 				C792C8CB1D266B7D00C636DD /* TextImageViewController.swift in Sources */,
+				C7CA75571D534964000A26E7 /* TheTaleOfGingerAndPickles.swift in Sources */,
+				C7CA755B1D534964000A26E7 /* TheTaleOfJohnnyTownMouse.swift in Sources */,
+				C7CA75631D534964000A26E7 /* TheTaleOfTwoBadMice.swift in Sources */,
+				C7CA755F1D534964000A26E7 /* TheTaleOfJemimaPuddleDuck.swift in Sources */,
+				C7CA75551D534964000A26E7 /* TheStoryOfMissMoppet.swift in Sources */,
+				C7CA75661D534964000A26E7 /* TheTaleOfSquirrelNutkin.swift in Sources */,
+				C7CA75541D534964000A26E7 /* CecilyParsleysNurseryRhymes.swift in Sources */,
 				C792C8D31D266D0E00C636DD /* Math+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
