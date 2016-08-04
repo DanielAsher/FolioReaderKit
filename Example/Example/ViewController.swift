@@ -49,13 +49,13 @@ class ViewController: UIViewController {
 //        FolioReader.presentReader(parentViewController: self, withEpubPath: bookPath!, andConfig: config, shouldRemoveEpub: false)
 //    }
 //
-//    func setCover(button: UIButton, index: Int) {
-//        let epubName = epubSampleFiles[index];
-//        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
-//        
-//        if let image = FolioReader.getCoverImage(bookPath!) {
-//            button.setBackgroundImage(image, forState: .Normal)
-//        }
-//    }
+    func setCover(button: UIButton, index: Int) {
+        let epubName = epubSampleFiles[index];
+        let bookPath = NSBundle.mainBundle().pathForResource(epubName, ofType: "epub")
+        
+        if let image = FolioReader.getCoverImage(bookPath!) {
+            button.setBackgroundImage(image, forState: .Normal)
+        }
+    }
     
 }
